@@ -12,16 +12,12 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['Noto Sans SC', 'sans-serif'] },
-                    colors: {
-                        brand: { 50: '#fff7ed', 500: '#f97316', 600: '#ea580c' }
-                    },
                     animation: {
                         'fade-in': 'fadeIn 0.5s ease-out',
-                        'slide-up': 'slideUp 0.5s ease-out',
+                        'spin-slow': 'spin 20s linear infinite',
                     },
                     keyframes: {
                         fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-                        slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
                     }
                 }
             }
@@ -32,14 +28,16 @@
         .gradient-text { background: linear-gradient(135deg, #f97316 0%, #dc2626 50%, #db2777 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .glass { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
-        .trend-up { color: #ef4444; } .trend-down { color: #22c55e; } .trend-stable { color: #9ca3af; }
+        .card-hover:hover { transform: translateY(-4px); }
         .tab-active { border-bottom: 2px solid #f97316; color: #f97316; }
-        .chart-bar { transition: width 0.5s ease; }
-        /* 情感色 */
         .sentiment-positive { color: #22c55e; }
         .sentiment-negative { color: #ef4444; }
-        .sentiment-neutral { color: #9ca3af; }
+        .live-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .word-cloud span { transition: all 0.3s; }
+        .word-cloud span:hover { transform: scale(1.2); }
+        .export-btn { transition: all 0.2s; }
+        .export-btn:hover { background: rgba(255,255,255,0.2); }
     </style>
 </head>
 <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-slate-100">
@@ -47,20 +45,24 @@
     <nav class="fixed top-0 left-0 right-0 z-50 glass">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center">🔥</div>
+                <div class="relative">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center">🔥</div>
+                    <span class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full live-pulse"></span>
+                </div>
                 <div>
                     <h1 class="font-bold">微博热搜舆情</h1>
-                    <p class="text-xs text-slate-400">智能分析系统</p>
+                    <p class="text-xs text-slate-400 flex items-center gap-1">
+                        <span class="w-2 h-2 bg-green-500 rounded-full live-pulse"></span>
+                        实时更新
+                    </p>
                 </div>
             </div>
             <div class="flex items-center gap-2">
-                <button onclick="switchTab('overview')" id="tab-overview" class="px-4 py-2 text-sm tab-active">概览</button>
-                <button onclick="switchTab('sentiment')" id="tab-sentiment" class="px-4 py-2 text-sm text-slate-400 hover:text-white">情感分析</button>
-                <button onclick="switchTab('trends')" id="tab-trends" class="px-4 py-2 text-sm text-slate-400 hover:text-white">趋势</button>
-                <button onclick="switchTab('topics')" id="tab-topics" class="px-4 py-2 text-sm text-slate-400 hover:text-white">主题</button>
-                <select id="dateSelect" class="ml-4 bg-slate-800 border border-slate-700 rounded-lg px-3 py-1 text-sm">
-                    <option value="">选择日期</option>
-                </select>
+                <button onclick="switchTab('overview')" id="tab-overview" class="px-3 py-1 text-sm tab-active">概览</button>
+                <button onclick="switchTab('sentiment')" id="tab-sentiment" class="px-3 py-1 text-sm text-slate-400 hover:text-white">情感</button>
+                <button onclick="switchTab('trends')" id="tab-trends" class="px-3 py-1 text-sm text-slate-400 hover:text-white">趋势</button>
+                <button onclick="switchTab('topics')" id="tab-topics" class="px-3 py-1 text-sm text-slate-400 hover:text-white">主题</button>
+                <button onclick="switchTab('export')" id="tab-export" class="px-3 py-1 text-sm text-slate-400 hover:text-white">导出</button>
             </div>
         </div>
     </nav>
@@ -68,95 +70,125 @@
     <main class="pt-24 pb-12 px-4">
         <div class="max-w-7xl mx-auto">
             <!-- 标题 -->
-            <div class="text-center mb-8 animate-fade-in">
-                <h1 class="text-4xl font-bold mb-2"><span class="gradient-text">微博热搜舆情监测</span></h1>
-                <p class="text-slate-400">实时热点追踪 · 智能情感分析 · LDA主题发现</p>
+            <div class="text-center mb-6">
+                <h1 class="text-3xl font-bold"><span class="gradient-text">微博热搜舆情监测</span></h1>
+                <p class="text-slate-400 text-sm mt-1">智能分析 · 实时追踪 · 多维可视化</p>
             </div>
 
-            <!-- 概览标签页 -->
+            <!-- 概览 -->
             <div id="panel-overview" class="tab-panel">
                 <!-- 统计 -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">热搜事件</div><div class="text-3xl font-bold" id="totalEvents">--</div></div>
-                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">总热度</div><div class="text-3xl font-bold gradient-text" id="totalHeat">--</div></div>
-                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">正面情感</div><div class="text-3xl font-bold sentiment-positive" id="positiveRatio">--</div></div>
-                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">负面情感</div><div class="text-3xl font-bold sentiment-negative" id="negativeRatio">--</div></div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+                    <div class="glass rounded-xl p-4 text-center"><div class="text-xs text-slate-400">热搜事件</div><div class="text-2xl font-bold" id="totalEvents">--</div></div>
+                    <div class="glass rounded-xl p-4 text-center"><div class="text-xs text-slate-400">总热度</div><div class="text-2xl font-bold gradient-text" id="totalHeat">--</div></div>
+                    <div class="glass rounded-xl p-4 text-center"><div class="text-xs text-slate-400">正面情感</div><div class="text-2xl font-bold sentiment-positive" id="positiveRatio">--</div></div>
+                    <div class="glass rounded-xl p-4 text-center"><div class="text-xs text-slate-400">更新时间</div><div class="text-sm font-bold" id="lastUpdate">--</div></div>
                 </div>
 
-                <!-- 分类热点 -->
-                <div class="mb-8">
-                    <h2 class="text-xl font-bold mb-4">📊 分类热点</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="categories"></div>
-                </div>
+                <!-- 分类 -->
+                <div class="grid md:grid-cols-3 gap-4 mb-6" id="categories"></div>
 
-                <!-- TOP20 -->
-                <div class="glass rounded-2xl p-6">
-                    <h2 class="text-xl font-bold mb-4">🔥 热门事件 TOP 20</h2>
+                <!-- TOP15 -->
+                <div class="glass rounded-xl p-4">
+                    <h3 class="font-bold mb-3">🔥 热点排行</h3>
                     <div class="space-y-2" id="topEvents"></div>
                 </div>
             </div>
 
-            <!-- 情感分析标签页 -->
+            <!-- 情感 -->
             <div id="panel-sentiment" class="tab-panel hidden">
-                <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <div class="glass rounded-2xl p-6">
-                        <h3 class="text-lg font-bold mb-4">情感分布</h3>
-                        <div class="flex items-center justify-center h-48">
-                            <div class="relative w-40 h-40 rounded-full border-4 border-slate-700 flex items-center justify-center">
-                                <div class="text-center"><div class="text-3xl font-bold" id="neutralPercent">50%</div><div class="text-sm text-slate-400">中性</div></div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center gap-8 mt-4">
-                            <div><span class="sentiment-positive text-xl">●</span> 正面 <span id="positivePercent">30%</span></div>
-                            <div><span class="sentiment-negative text-xl">●</span> 负面 <span id="negativePercent">20%</span></div>
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="glass rounded-xl p-4">
+                        <h3 class="font-bold mb-3">情感分布</h3>
+                        <div class="flex justify-center gap-6 py-4">
+                            <div class="text-center"><div class="text-3xl font-bold sentiment-positive" id="posPct">0%</div><div class="text-xs text-slate-400">正面</div></div>
+                            <div class="text-center"><div class="text-3xl font-bold" id="neuPct">0%</div><div class="text-xs text-slate-400">中性</div></div>
+                            <div class="text-center"><div class="text-3xl font-bold sentiment-negative" id="negPct">0%</div><div class="text-xs text-slate-400">负面</div></div>
                         </div>
                     </div>
-                    <div class="glass rounded-2xl p-6">
-                        <h3 class="text-lg font-bold mb-4">情感热力词</h3>
-                        <div class="space-y-2" id="sentimentWords"></div>
+                    <div class="glass rounded-xl p-4">
+                        <h3 class="font-bold mb-3">🔥 情感热词</h3>
+                        <div class="word-cloud flex flex-wrap gap-2 justify-center" id="sentimentWords"></div>
                     </div>
                 </div>
-                <div class="glass rounded-2xl p-6">
-                    <h3 class="text-lg font-bold mb-4">高情感事件</h3>
+                <div class="glass rounded-xl p-4">
+                    <h3 class="font-bold mb-3">高热度事件情感</h3>
                     <div class="space-y-2" id="sentimentEvents"></div>
                 </div>
             </div>
 
-            <!-- 趋势标签页 -->
+            <!-- 趋势 -->
             <div id="panel-trends" class="tab-panel hidden">
-                <div class="glass rounded-2xl p-6 mb-6">
-                    <h3 class="text-lg font-bold mb-4">热度趋势 (24小时)</h3>
-                    <div class="h-48 flex items-end gap-1" id="trendChart"></div>
+                <div class="glass rounded-xl p-4 mb-4">
+                    <h3 class="font-bold mb-3">📈 24小时热度趋势</h3>
+                    <div class="h-32 flex items-end gap-1" id="trendChart"></div>
                 </div>
-                <div class="glass rounded-2xl p-6">
-                    <h3 class="text-lg font-bold mb-4">上升最快事件</h3>
-                    <div class="space-y-2" id="risingEvents"></div>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="glass rounded-xl p-4">
+                        <h3 class="font-bold mb-3 text-green-400">↑ 上升最快</h3>
+                        <div class="space-y-2" id="risingEvents"></div>
+                    </div>
+                    <div class="glass rounded-xl p-4">
+                        <h3 class="font-bold mb-3 text-red-400">↓ 快速下降</h3>
+                        <div class="space-y-2" id="fallingEvents"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- 主题标签页 -->
+            <!-- 主题 -->
             <div id="panel-topics" class="tab-panel hidden">
-                <div class="glass rounded-2xl p-6 mb-6">
-                    <h3 class="text-lg font-bold mb-4">🔍 LDA主题发现</h3>
-                    <div class="grid md:grid-cols-2 gap-4" id="topics"></div>
+                <div class="glass rounded-xl p-4 mb-4">
+                    <h3 class="font-bold mb-3">🔍 主题分布</h3>
+                    <div class="grid md:grid-cols-2 gap-3" id="topics"></div>
                 </div>
-                <div class="glass rounded-2xl p-6">
-                    <h3 class="text-lg font-bold mb-4">词云</h3>
-                    <div class="h-64 flex items-center justify-center text-slate-500" id="wordCloud">
-                        <span class="text-4xl">☁️</span>
-                        <span class="ml-4">词云可视化区域</span>
+                <div class="glass rounded-xl p-4">
+                    <h3 class="font-bold mb-3">☁️ 词云</h3>
+                    <div class="word-cloud min-h-[200px] flex flex-wrap gap-3 justify-center items-center py-8" id="wordCloud"></div>
+                </div>
+            </div>
+
+            <!-- 导出 -->
+            <div id="panel-export" class="tab-panel hidden">
+                <div class="glass rounded-xl p-6">
+                    <h3 class="font-bold mb-4">📦 数据导出</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <button onclick="exportData('json')" class="export-btn glass rounded-xl p-4 text-center hover:bg-white/10">
+                            <div class="text-3xl mb-2">📄</div>
+                            <div class="font-medium">JSON</div>
+                            <div class="text-xs text-slate-400">原始数据</div>
+                        </button>
+                        <button onclick="exportData('csv')" class="export-btn glass rounded-xl p-4 text-center hover:bg-white/10">
+                            <div class="text-3xl mb-2">📊</div>
+                            <div class="font-medium">CSV</div>
+                            <div class="text-xs text-slate-400">表格文件</div>
+                        </button>
+                        <button onclick="exportData('md')" class="export-btn glass rounded-xl p-4 text-center hover:bg-white/10">
+                            <div class="text-3xl mb-2">📝</div>
+                            <div class="font-medium">Markdown</div>
+                            <div class="text-xs text-slate-400">报告文档</div>
+                        </button>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-2">API 接口</h4>
+                        <div class="bg-slate-800 rounded-lg p-3 text-sm font-mono text-slate-300">
+                            <div>GET /data/today.json - 今日数据</div>
+                            <div>GET /data/2026-02-27.json - 指定日期</div>
+                            <div>GET /api/sentiment - 情感分析</div>
+                            <div>GET /api/trends - 趋势数据</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
-        <p>© 2026 微博热搜舆情监测系统 · 算法：综合热度 = log(热度+1) × 排名权重 × 时间衰减</p>
+    <footer class="border-t border-slate-800 py-4 text-center text-slate-500 text-xs">
+        <p>© 2026 微博热搜舆情监测 · <span id="updateTime">--:--</span> 更新</p>
     </footer>
 
     <script>
-        // 标签切换
+        let currentData = null;
+        
         function switchTab(tab) {
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
             document.getElementById('panel-' + tab).classList.remove('hidden');
@@ -168,178 +200,113 @@
             document.getElementById('tab-' + tab).classList.remove('text-slate-400');
         }
 
-        // 加载数据
-        async function loadData(date = '2026-02-27') {
+        async function loadData() {
             try {
-                const response = await fetch(`/data/${date}.json`);
-                if (!response.ok) throw new Error('No data');
-                const data = await response.json();
-                renderData(data);
+                const response = await fetch('/data/2026-02-27.json');
+                currentData = await response.json();
             } catch (e) {
-                loadDemoData();
+                currentData = getDemoData();
             }
+            renderAll();
+            // 自动刷新
+            setTimeout(loadData, 60000);
         }
 
-        function renderData(data) {
-            // 统计
-            document.getElementById('totalEvents').textContent = data.summary?.totalEvents || 0;
-            document.getElementById('totalHeat').textContent = formatHeat(data.summary?.totalHeat || 0);
+        function renderAll() {
+            if (!currentData) return;
+            const d = currentData;
             
-            // 情感数据
-            const sentiment = data.sentiment || { positive: 30, negative: 20, neutral: 50 };
-            document.getElementById('positiveRatio').textContent = sentiment.positive + '%';
-            document.getElementById('negativeRatio').textContent = sentiment.negative + '%';
-            document.getElementById('positivePercent').textContent = sentiment.positive + '%';
-            document.getElementById('negativePercent').textContent = sentiment.negative + '%';
-            document.getElementById('neutralPercent').textContent = sentiment.neutral + '%';
+            document.getElementById('totalEvents').textContent = d.summary?.totalEvents || 0;
+            document.getElementById('totalHeat').textContent = formatHeat(d.summary?.totalHeat || 0);
+            document.getElementById('lastUpdate').textContent = new Date(d.generatedAt).toLocaleTimeString('zh-CN', {hour:'2-digit', minute:'2-digit'});
+            document.getElementById('updateTime').textContent = new Date(d.generatedAt).toLocaleTimeString();
+            
+            const s = d.sentiment || {positive:30, negative:20, neutral:50};
+            document.getElementById('positiveRatio').textContent = s.positive + '%';
+            document.getElementById('posPct').textContent = s.positive + '%';
+            document.getElementById('negPct').textContent = s.negative + '%';
+            document.getElementById('neuPct').textContent = s.neutral + '%';
 
             // 分类
-            const categoryConfig = {
-                social: { emoji: '🔥', name: '社会新闻', color: '#ef4444' },
-                government: { emoji: '🏛', name: '政务政策', color: '#3b82f6' },
-                tech: { emoji: '🤖', name: '科技互联网', color: '#8b5cf6' },
-                business: { emoji: '📈', name: '财经商业', color: '#22c55e' },
-                lifestyle: { emoji: '🌸', name: '生活方式', color: '#ec4899' },
-                entertainment: { emoji: '🎬', name: '娱乐文娱', color: '#a855f7' }
-            };
-            
-            const catsEl = document.getElementById('categories');
-            catsEl.innerHTML = Object.entries(data.categories || {}).filter(([_, c]) => c.events?.length > 0).sort((a, b) => (b[1].totalHeat || 0) - (a[1].totalHeat || 0)).slice(0, 6).map(([id, cat]) => {
-                const cfg = categoryConfig[id] || { emoji: '📌', name: id, color: '#6b7280' };
-                return `<div class="glass rounded-xl overflow-hidden card-hover">
-                    <div class="px-4 py-3" style="background:${cfg.color}20">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xl">${cfg.emoji}</span>
-                            <span class="font-bold" style="color:${cfg.color}">${formatHeat(cat.totalHeat || 0)}</span>
-                        </div>
-                        <div class="text-sm font-medium mt-1">${cfg.name}</div>
-                    </div>
-                    <div class="p-3 space-y-1">
-                        ${(cat.events || []).slice(0, 2).map(e => `<div class="text-sm text-slate-300 truncate">${e.title}</div>`).join('')}
-                    </div>
-                </div>`;
-            }).join('');
+            const cfg = {social:{e:'🔥',c:'#ef4444'},tech:{e:'🤖',c:'#8b5cf6'},entertainment:{e:'🎬',c:'#a855f7'},business:{e:'📈',c:'#22c55e'},sports:{e:'🏆',c:'#eab308'}};
+            document.getElementById('categories').innerHTML = Object.entries(d.categories||{}).filter(([_,x])=>x.events?.length).sort((a,b)=>(b[1].totalHeat||0)-(a[1].totalHeat||0)).slice(0,6).map(([id,x])=>`<div class="glass rounded-xl overflow-hidden"><div class="px-3 py-2" style="background:${(cfg[id]||{c:'#666'}).c}30"><div class="flex justify-between"><span>${(cfg[id]||{e:'📌'}).e} ${(cfg[id]||{n:id}).n||id}</span><span class="font-bold" style="color:${(cfg[id]||{c:'#666'}).c}">${formatHeat(x.totalHeat||0)}</span></div></div><div class="p-2 text-xs text-slate-400 truncate">${(x.events||[])[0]?.title||''}</div></div>`).join('');
 
-            // TOP20
-            const topEl = document.getElementById('topEvents');
-            topEl.innerHTML = (data.topEvents || []).slice(0, 20).map((e, i) => `
-                <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-800">
-                    <span class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm ${i < 3 ? 'bg-gradient-to-br from-yellow-400 to-orange-500 text-white' : 'bg-slate-700'}">${i+1}</span>
-                    <div class="flex-1 min-w-0">
-                        <div class="font-medium truncate">${e.title}</div>
-                        <div class="text-xs text-slate-500">热度: ${formatHeat(e.hotValue || 0)}</div>
-                    </div>
-                    <span class="text-xs ${e.trend === 'rising' ? 'sentiment-positive' : e.trend === 'falling' ? 'sentiment-negative' : 'text-slate-500'}">
-                        ${e.trend === 'rising' ? '↑' : e.trend === 'falling' ? '↓' : '→'}
-                    </span>
-                </div>
-            `).join('');
+            // TOP
+            document.getElementById('topEvents').innerHTML = (d.topEvents||[]).slice(0,15).map((e,i)=>`<div class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-800"><span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${i<3?'bg-gradient-to-br from-yellow-400 to-orange-500':'bg-slate-700'}">${i+1}</span><div class="flex-1 truncate text-sm">${e.title}</div><span class="text-xs ${e.trend==='rising'?'text-green-400':e.trend==='falling'?'text-red-400':'text-slate-500'}">${e.trend==='rising'?'↑':e.trend==='falling'?'↓':'→'}</span></div>`).join('');
 
-            // 情感分析面板
-            renderSentiment(data);
-            // 趋势面板
-            renderTrends(data);
-            // 主题面板
-            renderTopics(data);
-        }
-
-        function renderSentiment(data) {
             // 情感词
-            const wordsEl = document.getElementById('sentimentWords');
-            const positiveWords = ['希望', '开心', '感动', '支持', '加油', '赞', '厉害', '牛', '棒', '爱了'];
-            const negativeWords = ['失望', '愤怒', '无语', '恶心', '垃圾', '骗', '过分', '无语', '恶心'];
-            
-            wordsEl.innerHTML = `
-                <div class="grid grid-cols-5 gap-2">
-                    ${positiveWords.slice(0,5).map(w => `<span class="px-2 py-1 bg-green-900/50 rounded text-green-400 text-sm">${w}</span>`).join('')}
-                </div>
-                <div class="grid grid-cols-5 gap-2 mt-2">
-                    ${negativeWords.slice(0,5).map(w => `<span class="px-2 py-1 bg-red-900/50 rounded text-red-400 text-sm">${w}</span>`).join('')}
-                </div>
-            `;
+            const posWords = ['希望','开心','感动','支持','加油','赞','厉害','牛','棒','爱了'];
+            const negWords = ['失望','愤怒','无语','恶心','垃圾','骗','过分','车祸','死亡','犯罪'];
+            document.getElementById('sentimentWords').innerHTML = posWords.slice(0,5).map(w=>`<span class="px-2 py-1 bg-green-900/50 rounded text-green-400 text-sm cursor-pointer">${w}</span>`).join('') + '<br/>' + negWords.slice(0,5).map(w=>`<span class="px-2 py-1 bg-red-900/50 rounded text-red-400 text-sm cursor-pointer">${w}</span>`).join('');
 
-            // 高情感事件
-            const eventsEl = document.getElementById('sentimentEvents');
-            eventsEl.innerHTML = (data.topEvents || []).slice(0, 5).map(e => `
-                <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-800/50">
-                    <span class="${Math.random() > 0.5 ? 'sentiment-positive' : 'sentiment-negative'}">●</span>
-                    <div class="flex-1">${e.title}</div>
-                    <div class="text-sm ${Math.random() > 0.5 ? 'sentiment-positive' : 'sentiment-negative'}">${(Math.random() * 100).toFixed(1)}</div>
-                </div>
-            `).join('');
-        }
-
-        function renderTrends(data) {
             // 趋势图
-            const chartEl = document.getElementById('trendChart');
-            const hours = 24;
-            let html = '';
-            for (let i = 0; i < hours; i++) {
-                const height = Math.random() * 80 + 20;
-                html += `<div class="flex-1 bg-gradient-to-t from-orange-500 to-pink-500 rounded-t" style="height:${height}%"></div>`;
+            document.getElementById('trendChart').innerHTML = Array(24).fill(0).map((_,i)=>`<div class="flex-1 bg-gradient-to-t from-orange-500 to-pink-500 rounded-t" style="height:${20+Math.random()*80}%"></div>`).join('');
+
+            // 上升下降
+            const rising = (d.topEvents||[]).filter(e=>e.trend==='rising').slice(0,5);
+            const falling = (d.topEvents||[]).filter(e=>e.trend==='falling').slice(0,5);
+            document.getElementById('risingEvents').innerHTML = rising.length ? rising.map(e=>`<div class="flex items-center gap-2 text-sm"><span class="text-green-400">↑</span><div class="flex-1 truncate">${e.title}</div></div>`).join('') : '<div class="text-slate-500 text-sm">暂无</div>';
+            document.getElementById('fallingEvents').innerHTML = falling.length ? falling.map(e=>`<div class="flex items-center gap-2 text-sm"><span class="text-red-400">↓</span><div class="flex-1 truncate">${e.title}</div></div>`).join('') : '<div class="text-slate-500 text-sm">暂无</div>';
+
+            // 主题
+            const topics = [{n:'社会热点',w:['疫情','事故','灾害','安全','犯罪']},{n:'科技前沿',w:['AI','手机','芯片','智能','互联网']},{n:'娱乐八卦',w:['明星','恋情','官宣','新剧','综艺']},{n:'体育竞技',w:['比赛','冠军','球员','进球','世界杯']}];
+            document.getElementById('topics').innerHTML = topics.map(t=>`<div class="glass rounded-lg p-3"><div class="font-medium mb-2">${t.n}</div><div class="flex flex-wrap gap-1">${t.w.map((w,i)=>`<span class="px-2 py-0.5 bg-slate-700 rounded text-xs" style="font-size:${14-i}px">${w}</span>`).join('')}</div></div>`).join('');
+
+            // 词云
+            const cloudWords = ['中国男足','手机涨价','杨幂','银发经济','江西车祸','AI','世界杯','明星','股票','高考','旅游','美食','足球','篮球','电影','电视剧'];
+            document.getElementById('wordCloud').innerHTML = cloudWords.map((w,i)=>`<span class="cursor-pointer hover:text-orange-400" style="font-size:${12+Math.random()*16}px;color:hsl(${Math.random()*60+10},70%,60%)">${w}</span>`).join('');
+        }
+
+        function formatHeat(v) {
+            if(v>=1e8) return (v/1e8).toFixed(1)+'亿';
+            if(v>=1e4) return (v/1e4).toFixed(1)+'万';
+            return v.toString();
+        }
+
+        function exportData(format) {
+            if(!currentData) return alert('暂无数据');
+            let content, filename, type;
+            if(format==='json') {
+                content = JSON.stringify(currentData, null, 2);
+                filename = 'weibo-data.json';
+                type = 'application/json';
+            } else if(format==='csv') {
+                const rows = [['排名','标题','热度','分类','趋势']];
+                (currentData.topEvents||[]).forEach(e=>rows.push([e.rank,e.title,e.hotValue,e.category,e.trend]));
+                content = rows.map(r=>r.join(',')).join('\n');
+                filename = 'weibo-data.csv';
+                type = 'text/csv';
+            } else {
+                content = `# 微博热搜舆情报告\n\n生成时间: ${currentData.generatedAt}\n\n## TOP10\n\n` + (currentData.topEvents||[]).slice(0,10).map((e,i)=>`${i+1}. ${e.title} (热度: ${formatHeat(e.hotValue)})`).join('\n');
+                filename = 'weibo-report.md';
+                type = 'text/markdown';
             }
-            chartEl.innerHTML = html;
-
-            // 上升事件
-            const risingEl = document.getElementById('risingEvents');
-            risingEl.innerHTML = (data.topEvents || []).filter(e => e.trend === 'rising').slice(0, 5).map(e => `
-                <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-800/50">
-                    <span class="sentiment-positive">↑</span>
-                    <div class="flex-1">${e.title}</div>
-                    <div class="text-sm text-slate-400">#${e.rank}</div>
-                </div>
-            `).join('') || '<div class="text-slate-500">暂无上升事件</div>';
+            const blob = new Blob([content], {type});
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = filename;
+            a.click();
         }
 
-        function renderTopics(data) {
-            const topicsEl = document.getElementById('topics');
-            const topics = [
-                { name: '社会热点', words: ['疫情', '车祸', '事故', '灾害', '安全'] },
-                { name: '科技前沿', words: ['AI', '手机', '芯片', '新能源', '智能'] },
-                { name: '娱乐八卦', words: ['明星', '恋情', '官宣', '新剧', '综艺'] },
-                { name: '体育竞技', words: ['比赛', '冠军', '球员', '进球', '世界杯'] }
-            ];
-            
-            topicsEl.innerHTML = topics.map(t => `
-                <div class="glass rounded-xl p-4">
-                    <h4 class="font-bold mb-3">${t.name}</h4>
-                    <div class="flex flex-wrap gap-2">
-                        ${t.words.map((w, i) => `<span class="px-2 py-1 bg-slate-700 rounded text-sm" style="font-size:${14 - i}px">${w}</span>`).join('')}
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function loadDemoData() {
-            const demoData = {
-                summary: { totalEvents: 50, totalHeat: 2500000 },
-                sentiment: { positive: 32, negative: 18, neutral: 50 },
+        function getDemoData() {
+            return {
+                summary: {totalEvents: 50, totalHeat: 2500000},
+                sentiment: {positive: 32, negative: 18, neutral: 50},
+                generatedAt: new Date().toISOString(),
                 categories: {
-                    social: { id: 'social', name: '社会新闻', emoji: '🔥', color: '#ef4444', events: [
-                        { title: '中国男足战胜日本', rank: 1, hotValue: 1230000 },
-                        { title: '江西车祸', rank: 5, hotValue: 450000 }
-                    ], totalHeat: 1800000 },
-                    tech: { id: 'tech', name: '科技', emoji: '🤖', color: '#8b5cf6', events: [
-                        { title: '手机涨价', rank: 2, hotValue: 1060000 }
-                    ], totalHeat: 850000 }
+                    social: {events:[{title:'中国男足战胜日本',rank:1,hotValue:1230000}],totalHeat:1800000},
+                    tech: {events:[{title:'手机涨价',rank:2,hotValue:1060000}],totalHeat:850000}
                 },
                 topEvents: [
-                    { title: '中国男足战胜日本', rank: 1, hotValue: 1230000, trend: 'rising' },
-                    { title: '手机涨价', rank: 2, hotValue: 1060000, trend: 'stable' },
-                    { title: '杨幂新剧', rank: 3, hotValue: 980000, trend: 'rising' },
-                    { title: '银发经济', rank: 4, hotValue: 850000, trend: 'falling' }
+                    {title:'中国男足战胜日本',rank:1,hotValue:1230000,trend:'rising'},
+                    {title:'手机涨价',rank:2,hotValue:1060000,trend:'stable'},
+                    {title:'杨幂新剧',rank:3,hotValue:980000,trend:'rising'},
+                    {title:'银发经济',rank:4,hotValue:850000,trend:'falling'},
+                    {title:'江西车祸',rank:5,hotValue:450000,trend:'stable'}
                 ]
             };
-            renderData(demoData);
         }
 
-        function formatHeat(val) {
-            if (val >= 100000000) return (val / 100000000).toFixed(1) + '亿';
-            if (val >= 10000) return (val / 10000).toFixed(1) + '万';
-            return val.toString();
-        }
-
-        // 初始化
         loadData();
     </script>
 </body>
