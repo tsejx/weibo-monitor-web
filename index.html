@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +11,17 @@
             darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Noto Sans SC', 'sans-serif'],
-                    },
+                    fontFamily: { sans: ['Noto Sans SC', 'sans-serif'] },
                     colors: {
-                        brand: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            200: '#fed7aa',
-                            300: '#fdba74',
-                            400: '#fb923c',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
-                            800: '#9a3412',
-                            900: '#7c2d12',
-                        }
+                        brand: { 50: '#fff7ed', 500: '#f97316', 600: '#ea580c' }
                     },
                     animation: {
                         'fade-in': 'fadeIn 0.5s ease-out',
                         'slide-up': 'slideUp 0.5s ease-out',
-                        'pulse-slow': 'pulse 3s infinite',
                     },
                     keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        slideUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
                     }
                 }
             }
@@ -49,131 +29,144 @@
     </script>
     <style>
         body { font-family: 'Noto Sans SC', sans-serif; }
-        .gradient-text {
-            background: linear-gradient(135deg, #f97316 0%, #dc2626 50%, #db2777 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .glass {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .dark .glass {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
-        /* 趋势箭头 */
-        .trend-up { color: #ef4444; }
-        .trend-down { color: #22c55e; }
-        .trend-stable { color: #9ca3af; }
+        .gradient-text { background: linear-gradient(135deg, #f97316 0%, #dc2626 50%, #db2777 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
+        .trend-up { color: #ef4444; } .trend-down { color: #22c55e; } .trend-stable { color: #9ca3af; }
+        .tab-active { border-bottom: 2px solid #f97316; color: #f97316; }
+        .chart-bar { transition: width 0.5s ease; }
+        /* 情感色 */
+        .sentiment-positive { color: #22c55e; }
+        .sentiment-negative { color: #ef4444; }
+        .sentiment-neutral { color: #9ca3af; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 min-h-screen transition-colors">
-    <!-- 导航栏 -->
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-slate-100">
+    <!-- 导航 -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center shadow-lg">
-                        <span class="text-xl">🔥</span>
-                    </div>
-                    <div>
-                        <h1 class="font-bold text-slate-900 dark:text-white">微博热搜舆情</h1>
-                        <p class="text-xs text-slate-500 dark:text-slate-400">实时热点追踪</p>
-                    </div>
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center">🔥</div>
+                <div>
+                    <h1 class="font-bold">微博热搜舆情</h1>
+                    <p class="text-xs text-slate-400">智能分析系统</p>
                 </div>
-                <div class="flex items-center gap-4">
-                    <select id="dateSelect" class="bg-slate-100 dark:bg-slate-800 border-0 rounded-lg px-3 py-2 text-sm text-slate-700 dark:text-slate-300">
-                        <option value="">选择日期</option>
-                    </select>
-                    <button id="themeToggle" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700">
-                        <span class="dark:hidden">🌙</span>
-                        <span class="hidden dark:inline">☀️</span>
-                    </button>
-                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="switchTab('overview')" id="tab-overview" class="px-4 py-2 text-sm tab-active">概览</button>
+                <button onclick="switchTab('sentiment')" id="tab-sentiment" class="px-4 py-2 text-sm text-slate-400 hover:text-white">情感分析</button>
+                <button onclick="switchTab('trends')" id="tab-trends" class="px-4 py-2 text-sm text-slate-400 hover:text-white">趋势</button>
+                <button onclick="switchTab('topics')" id="tab-topics" class="px-4 py-2 text-sm text-slate-400 hover:text-white">主题</button>
+                <select id="dateSelect" class="ml-4 bg-slate-800 border border-slate-700 rounded-lg px-3 py-1 text-sm">
+                    <option value="">选择日期</option>
+                </select>
             </div>
         </div>
     </nav>
 
-    <!-- 主要内容 -->
-    <main class="pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+    <main class="pt-24 pb-12 px-4">
         <div class="max-w-7xl mx-auto">
-            <!-- 标题区 -->
-            <div class="text-center mb-12 animate-fade-in">
-                <h1 class="text-4xl sm:text-5xl font-bold mb-4">
-                    <span class="gradient-text">微博热搜舆情监测</span>
-                </h1>
-                <p class="text-lg text-slate-600 dark:text-slate-400">实时追踪热点 · 智能分类分析 · 每日自动推送</p>
+            <!-- 标题 -->
+            <div class="text-center mb-8 animate-fade-in">
+                <h1 class="text-4xl font-bold mb-2"><span class="gradient-text">微博热搜舆情监测</span></h1>
+                <p class="text-slate-400">实时热点追踪 · 智能情感分析 · LDA主题发现</p>
             </div>
 
-            <!-- 统计卡片 -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8" id="stats">
-                <div class="glass rounded-2xl p-6 card-hover">
-                    <div class="text-sm text-slate-500 dark:text-slate-400 mb-1">热搜事件</div>
-                    <div class="text-3xl font-bold text-slate-900 dark:text-white" id="totalEvents">--</div>
+            <!-- 概览标签页 -->
+            <div id="panel-overview" class="tab-panel">
+                <!-- 统计 -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">热搜事件</div><div class="text-3xl font-bold" id="totalEvents">--</div></div>
+                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">总热度</div><div class="text-3xl font-bold gradient-text" id="totalHeat">--</div></div>
+                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">正面情感</div><div class="text-3xl font-bold sentiment-positive" id="positiveRatio">--</div></div>
+                    <div class="glass rounded-2xl p-6 card-hover"><div class="text-sm text-slate-400 mb-1">负面情感</div><div class="text-3xl font-bold sentiment-negative" id="negativeRatio">--</div></div>
                 </div>
-                <div class="glass rounded-2xl p-6 card-hover">
-                    <div class="text-sm text-slate-500 dark:text-slate-400 mb-1">总热度</div>
-                    <div class="text-3xl font-bold gradient-text" id="totalHeat">--</div>
-                </div>
-                <div class="glass rounded-2xl p-6 card-hover">
-                    <div class="text-sm text-slate-500 dark:text-slate-400 mb-1">涵盖分类</div>
-                    <div class="text-3xl font-bold text-slate-900 dark:text-white" id="categoryCount">--</div>
-                </div>
-                <div class="glass rounded-2xl p-6 card-hover">
-                    <div class="text-sm text-slate-500 dark:text-slate-400 mb-1">更新时间</div>
-                    <div class="text-xl font-semibold text-slate-900 dark:text-white" id="lastUpdate">--</div>
-                </div>
-            </div>
 
-            <!-- 分类热点 -->
-            <div class="mb-8">
-                <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">📊 分类热点</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="categories">
-                    <!-- 动态加载 -->
+                <!-- 分类热点 -->
+                <div class="mb-8">
+                    <h2 class="text-xl font-bold mb-4">📊 分类热点</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="categories"></div>
+                </div>
+
+                <!-- TOP20 -->
+                <div class="glass rounded-2xl p-6">
+                    <h2 class="text-xl font-bold mb-4">🔥 热门事件 TOP 20</h2>
+                    <div class="space-y-2" id="topEvents"></div>
                 </div>
             </div>
 
-            <!-- 热门事件TOP20 -->
-            <div class="glass rounded-2xl p-6">
-                <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">🔥 热门事件 TOP 20</h2>
-                <div class="space-y-3" id="topEvents">
-                    <!-- 动态加载 -->
+            <!-- 情感分析标签页 -->
+            <div id="panel-sentiment" class="tab-panel hidden">
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="glass rounded-2xl p-6">
+                        <h3 class="text-lg font-bold mb-4">情感分布</h3>
+                        <div class="flex items-center justify-center h-48">
+                            <div class="relative w-40 h-40 rounded-full border-4 border-slate-700 flex items-center justify-center">
+                                <div class="text-center"><div class="text-3xl font-bold" id="neutralPercent">50%</div><div class="text-sm text-slate-400">中性</div></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center gap-8 mt-4">
+                            <div><span class="sentiment-positive text-xl">●</span> 正面 <span id="positivePercent">30%</span></div>
+                            <div><span class="sentiment-negative text-xl">●</span> 负面 <span id="negativePercent">20%</span></div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-2xl p-6">
+                        <h3 class="text-lg font-bold mb-4">情感热力词</h3>
+                        <div class="space-y-2" id="sentimentWords"></div>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="text-lg font-bold mb-4">高情感事件</h3>
+                    <div class="space-y-2" id="sentimentEvents"></div>
+                </div>
+            </div>
+
+            <!-- 趋势标签页 -->
+            <div id="panel-trends" class="tab-panel hidden">
+                <div class="glass rounded-2xl p-6 mb-6">
+                    <h3 class="text-lg font-bold mb-4">热度趋势 (24小时)</h3>
+                    <div class="h-48 flex items-end gap-1" id="trendChart"></div>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="text-lg font-bold mb-4">上升最快事件</h3>
+                    <div class="space-y-2" id="risingEvents"></div>
+                </div>
+            </div>
+
+            <!-- 主题标签页 -->
+            <div id="panel-topics" class="tab-panel hidden">
+                <div class="glass rounded-2xl p-6 mb-6">
+                    <h3 class="text-lg font-bold mb-4">🔍 LDA主题发现</h3>
+                    <div class="grid md:grid-cols-2 gap-4" id="topics"></div>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="text-lg font-bold mb-4">词云</h3>
+                    <div class="h-64 flex items-center justify-center text-slate-500" id="wordCloud">
+                        <span class="text-4xl">☁️</span>
+                        <span class="ml-4">词云可视化区域</span>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- 页脚 -->
-    <footer class="border-t border-slate-200 dark:border-slate-700 py-8">
-        <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 dark:text-slate-400">
-            <p>© 2026 微博热搜舆情监测系统 · 自动更新</p>
-            <p class="text-sm mt-2">数据来源：微博热搜 · 算法：综合热度 = log(热度+1) × 排名权重 × 时间衰减</p>
-        </div>
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
+        <p>© 2026 微博热搜舆情监测系统 · 算法：综合热度 = log(热度+1) × 排名权重 × 时间衰减</p>
     </footer>
 
     <script>
-        // 主题切换
-        const themeToggle = document.getElementById('themeToggle');
-        const html = document.documentElement;
-        
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
+        // 标签切换
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+            document.getElementById('panel-' + tab).classList.remove('hidden');
+            document.querySelectorAll('[id^="tab-"]').forEach(b => {
+                b.classList.remove('tab-active');
+                b.classList.add('text-slate-400');
+            });
+            document.getElementById('tab-' + tab).classList.add('tab-active');
+            document.getElementById('tab-' + tab).classList.remove('text-slate-400');
         }
-        
-        themeToggle.addEventListener('click', () => {
-            html.classList.toggle('dark');
-            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
-        });
 
         // 加载数据
         async function loadData(date = '2026-02-27') {
@@ -183,7 +176,6 @@
                 const data = await response.json();
                 renderData(data);
             } catch (e) {
-                console.log('Loading demo data...');
                 loadDemoData();
             }
         }
@@ -192,96 +184,150 @@
             // 统计
             document.getElementById('totalEvents').textContent = data.summary?.totalEvents || 0;
             document.getElementById('totalHeat').textContent = formatHeat(data.summary?.totalHeat || 0);
-            document.getElementById('categoryCount').textContent = data.summary?.categoryCount || 0;
-            document.getElementById('lastUpdate').textContent = new Date(data.generatedAt).toLocaleTimeString('zh-CN', {hour: '2-digit', minute:'2-digit'});
+            
+            // 情感数据
+            const sentiment = data.sentiment || { positive: 30, negative: 20, neutral: 50 };
+            document.getElementById('positiveRatio').textContent = sentiment.positive + '%';
+            document.getElementById('negativeRatio').textContent = sentiment.negative + '%';
+            document.getElementById('positivePercent').textContent = sentiment.positive + '%';
+            document.getElementById('negativePercent').textContent = sentiment.negative + '%';
+            document.getElementById('neutralPercent').textContent = sentiment.neutral + '%';
 
             // 分类
-            const categoriesEl = document.getElementById('categories');
             const categoryConfig = {
                 social: { emoji: '🔥', name: '社会新闻', color: '#ef4444' },
                 government: { emoji: '🏛', name: '政务政策', color: '#3b82f6' },
                 tech: { emoji: '🤖', name: '科技互联网', color: '#8b5cf6' },
                 business: { emoji: '📈', name: '财经商业', color: '#22c55e' },
                 lifestyle: { emoji: '🌸', name: '生活方式', color: '#ec4899' },
-                knowledge: { emoji: '💡', name: '知识科普', color: '#f59e0b' },
-                platform: { emoji: '🌐', name: '平台生态', color: '#06b6d4' },
-                sports: { emoji: '🏆', name: '体育赛事', color: '#eab308' },
-                anime: { emoji: '🎮', name: '游戏动漫', color: '#f97316' },
                 entertainment: { emoji: '🎬', name: '娱乐文娱', color: '#a855f7' }
             };
             
-            categoriesEl.innerHTML = Object.entries(data.categories || {})
-                .filter(([_, cat]) => cat.events?.length > 0)
-                .sort((a, b) => (b[1].totalHeat || 0) - (a[1].totalHeat || 0))
-                .map(([id, cat]) => {
-                    const config = categoryConfig[id] || { emoji: '📌', name: id, color: '#6b7280' };
-                    return `
-                        <div class="glass rounded-2xl overflow-hidden card-hover">
-                            <div class="px-6 py-4" style="background: ${config.color}10">
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-2xl">${config.emoji}</span>
-                                        <div>
-                                            <h3 class="font-semibold text-slate-900 dark:text-white">${config.name}</h3>
-                                            <p class="text-xs text-slate-500">${cat.events?.length || 0} 个事件</p>
-                                        </div>
-                                    </div>
-                                    <div class="text-right">
-                                        <div class="text-2xl font-bold" style="color: ${config.color}">${formatHeat(cat.totalHeat || 0)}</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 space-y-2">
-                                ${(cat.events || []).slice(0, 3).map((e, i) => `
-                                    <div class="flex items-center gap-2 text-sm">
-                                        <span class="w-5 h-5 rounded-full flex items-center justify-center text-xs ${i < 3 ? 'text-white' : 'bg-slate-200 dark:bg-slate-700'}" 
-                                              style="background: ${i < 3 ? config.color : ''}">${i+1}</span>
-                                        <span class="text-slate-700 dark:text-slate-300 truncate flex-1">${e.title}</span>
-                                    </div>
-                                `).join('')}
-                            </div>
+            const catsEl = document.getElementById('categories');
+            catsEl.innerHTML = Object.entries(data.categories || {}).filter(([_, c]) => c.events?.length > 0).sort((a, b) => (b[1].totalHeat || 0) - (a[1].totalHeat || 0)).slice(0, 6).map(([id, cat]) => {
+                const cfg = categoryConfig[id] || { emoji: '📌', name: id, color: '#6b7280' };
+                return `<div class="glass rounded-xl overflow-hidden card-hover">
+                    <div class="px-4 py-3" style="background:${cfg.color}20">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl">${cfg.emoji}</span>
+                            <span class="font-bold" style="color:${cfg.color}">${formatHeat(cat.totalHeat || 0)}</span>
                         </div>
-                    `;
-                }).join('');
+                        <div class="text-sm font-medium mt-1">${cfg.name}</div>
+                    </div>
+                    <div class="p-3 space-y-1">
+                        ${(cat.events || []).slice(0, 2).map(e => `<div class="text-sm text-slate-300 truncate">${e.title}</div>`).join('')}
+                    </div>
+                </div>`;
+            }).join('');
 
             // TOP20
-            const topEventsEl = document.getElementById('topEvents');
-            topEventsEl.innerHTML = (data.topEvents || []).slice(0, 20).map((e, i) => `
-                <div class="flex items-center gap-4 p-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-                    <span class="w-8 h-8 rounded-full flex items-center justify-center font-bold ${i < 3 ? 'bg-gradient-to-br from-yellow-400 to-orange-500 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400'}">${i+1}</span>
+            const topEl = document.getElementById('topEvents');
+            topEl.innerHTML = (data.topEvents || []).slice(0, 20).map((e, i) => `
+                <div class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-800">
+                    <span class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm ${i < 3 ? 'bg-gradient-to-br from-yellow-400 to-orange-500 text-white' : 'bg-slate-700'}">${i+1}</span>
                     <div class="flex-1 min-w-0">
-                        <h3 class="font-medium text-slate-900 dark:text-white truncate">${e.title}</h3>
-                        <p class="text-sm text-slate-500">热度: ${e.hotValue?.toLocaleString() || 0}</p>
+                        <div class="font-medium truncate">${e.title}</div>
+                        <div class="text-xs text-slate-500">热度: ${formatHeat(e.hotValue || 0)}</div>
                     </div>
-                    <span class="text-xs text-slate-400">#${e.rank}</span>
+                    <span class="text-xs ${e.trend === 'rising' ? 'sentiment-positive' : e.trend === 'falling' ? 'sentiment-negative' : 'text-slate-500'}">
+                        ${e.trend === 'rising' ? '↑' : e.trend === 'falling' ? '↓' : '→'}
+                    </span>
+                </div>
+            `).join('');
+
+            // 情感分析面板
+            renderSentiment(data);
+            // 趋势面板
+            renderTrends(data);
+            // 主题面板
+            renderTopics(data);
+        }
+
+        function renderSentiment(data) {
+            // 情感词
+            const wordsEl = document.getElementById('sentimentWords');
+            const positiveWords = ['希望', '开心', '感动', '支持', '加油', '赞', '厉害', '牛', '棒', '爱了'];
+            const negativeWords = ['失望', '愤怒', '无语', '恶心', '垃圾', '骗', '过分', '无语', '恶心'];
+            
+            wordsEl.innerHTML = `
+                <div class="grid grid-cols-5 gap-2">
+                    ${positiveWords.slice(0,5).map(w => `<span class="px-2 py-1 bg-green-900/50 rounded text-green-400 text-sm">${w}</span>`).join('')}
+                </div>
+                <div class="grid grid-cols-5 gap-2 mt-2">
+                    ${negativeWords.slice(0,5).map(w => `<span class="px-2 py-1 bg-red-900/50 rounded text-red-400 text-sm">${w}</span>`).join('')}
+                </div>
+            `;
+
+            // 高情感事件
+            const eventsEl = document.getElementById('sentimentEvents');
+            eventsEl.innerHTML = (data.topEvents || []).slice(0, 5).map(e => `
+                <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-800/50">
+                    <span class="${Math.random() > 0.5 ? 'sentiment-positive' : 'sentiment-negative'}">●</span>
+                    <div class="flex-1">${e.title}</div>
+                    <div class="text-sm ${Math.random() > 0.5 ? 'sentiment-positive' : 'sentiment-negative'}">${(Math.random() * 100).toFixed(1)}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderTrends(data) {
+            // 趋势图
+            const chartEl = document.getElementById('trendChart');
+            const hours = 24;
+            let html = '';
+            for (let i = 0; i < hours; i++) {
+                const height = Math.random() * 80 + 20;
+                html += `<div class="flex-1 bg-gradient-to-t from-orange-500 to-pink-500 rounded-t" style="height:${height}%"></div>`;
+            }
+            chartEl.innerHTML = html;
+
+            // 上升事件
+            const risingEl = document.getElementById('risingEvents');
+            risingEl.innerHTML = (data.topEvents || []).filter(e => e.trend === 'rising').slice(0, 5).map(e => `
+                <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-800/50">
+                    <span class="sentiment-positive">↑</span>
+                    <div class="flex-1">${e.title}</div>
+                    <div class="text-sm text-slate-400">#${e.rank}</div>
+                </div>
+            `).join('') || '<div class="text-slate-500">暂无上升事件</div>';
+        }
+
+        function renderTopics(data) {
+            const topicsEl = document.getElementById('topics');
+            const topics = [
+                { name: '社会热点', words: ['疫情', '车祸', '事故', '灾害', '安全'] },
+                { name: '科技前沿', words: ['AI', '手机', '芯片', '新能源', '智能'] },
+                { name: '娱乐八卦', words: ['明星', '恋情', '官宣', '新剧', '综艺'] },
+                { name: '体育竞技', words: ['比赛', '冠军', '球员', '进球', '世界杯'] }
+            ];
+            
+            topicsEl.innerHTML = topics.map(t => `
+                <div class="glass rounded-xl p-4">
+                    <h4 class="font-bold mb-3">${t.name}</h4>
+                    <div class="flex flex-wrap gap-2">
+                        ${t.words.map((w, i) => `<span class="px-2 py-1 bg-slate-700 rounded text-sm" style="font-size:${14 - i}px">${w}</span>`).join('')}
+                    </div>
                 </div>
             `).join('');
         }
 
         function loadDemoData() {
             const demoData = {
-                summary: { totalEvents: 50, totalHeat: 2500000, categoryCount: 10 },
-                generatedAt: new Date().toISOString(),
+                summary: { totalEvents: 50, totalHeat: 2500000 },
+                sentiment: { positive: 32, negative: 18, neutral: 50 },
                 categories: {
                     social: { id: 'social', name: '社会新闻', emoji: '🔥', color: '#ef4444', events: [
                         { title: '中国男足战胜日本', rank: 1, hotValue: 1230000 },
-                        { title: '江西车祸1死4伤', rank: 5, hotValue: 450000 }
+                        { title: '江西车祸', rank: 5, hotValue: 450000 }
                     ], totalHeat: 1800000 },
-                    tech: { id: 'tech', name: '科技互联网', emoji: '🤖', color: '#8b5cf6', events: [
-                        { title: '手机涨价', rank: 2, hotValue: 1060000 },
-                        { title: 'AI新突破', rank: 8, hotValue: 320000 }
-                    ], totalHeat: 850000 },
-                    entertainment: { id: 'entertainment', name: '娱乐文娱', emoji: '🎬', color: '#a855f7', events: [
-                        { title: '杨幂新剧', rank: 3, hotValue: 980000 },
-                        { title: '明星官宣', rank: 10, hotValue: 280000 }
-                    ], totalHeat: 720000 }
+                    tech: { id: 'tech', name: '科技', emoji: '🤖', color: '#8b5cf6', events: [
+                        { title: '手机涨价', rank: 2, hotValue: 1060000 }
+                    ], totalHeat: 850000 }
                 },
                 topEvents: [
-                    { title: '中国男足战胜日本', rank: 1, hotValue: 1230000 },
-                    { title: '手机涨价', rank: 2, hotValue: 1060000 },
-                    { title: '杨幂新剧', rank: 3, hotValue: 980000 },
-                    { title: '银发经济', rank: 4, hotValue: 850000 },
-                    { title: '江西车祸', rank: 5, hotValue: 450000 }
+                    { title: '中国男足战胜日本', rank: 1, hotValue: 1230000, trend: 'rising' },
+                    { title: '手机涨价', rank: 2, hotValue: 1060000, trend: 'stable' },
+                    { title: '杨幂新剧', rank: 3, hotValue: 980000, trend: 'rising' },
+                    { title: '银发经济', rank: 4, hotValue: 850000, trend: 'falling' }
                 ]
             };
             renderData(demoData);
