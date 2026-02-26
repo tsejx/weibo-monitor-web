@@ -1,0 +1,65 @@
+name: Build and Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to build (YYYY-MM-DD)'
+        required: false
+        type: string
+  schedule:
+    # 每天 0:30 自动构建
+    - cron: '30 0 * * *'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: |
+          cd weibo-monitor-web
+          npm ci
+          
+      - name: Build
+        run: |
+          cd weibo-monitor-web
+          npm run build
+          
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Fetch latest data
+        run: |
+          # 从监测系统获取最新数据
+          cd weibo-monitor-web
+          mkdir -p public/data
+          # 这里可以添加数据抓取逻辑
+          
+      - name: Generate dates index
+        run: |
+          python3 scripts/generate_dates.py
+          
+      - name: Configure Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./weibo-monitor-web/out
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
