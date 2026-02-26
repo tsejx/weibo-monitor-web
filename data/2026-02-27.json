@@ -1,0 +1,61 @@
+{
+  "date": "2026-02-27",
+  "timeRange": "00:00-24:00",
+  "generatedAt": "2026-02-27T02:00:00Z",
+  "summary": {
+    "totalEvents": 55,
+    "totalHeat": 2850000,
+    "categoryCount": 10,
+    "newEvents": 12,
+    "peakEvent": {
+      "id": "abc123",
+      "title": "中国男足战胜日本",
+      "hotValue": 1230000,
+      "heatScore": 850,
+      "rank": 1,
+      "category": "sports"
+    },
+    "topCategories": ["sports", "social", "tech", "entertainment", "business"]
+  },
+  "categories": {
+    "social": {
+      "id": "social",
+      "name": "社会新闻",
+      "emoji": "🔥",
+      "color": "#ef4444",
+      "events": [
+        {"id": "s1", "title": "江西车祸1死4伤", "rank": 8, "hotValue": 450000, "heatScore": 320, "category": "social", "trend": "falling"},
+        {"id": "s2", "title": "山火蔓延", "rank": 15, "hotValue": 280000, "heatScore": 180, "category": "social", "trend": "rising"}
+      ],
+      "totalHeat": 850000
+    },
+    "sports": {
+      "id": "sports",
+      "name": "体育赛事",
+      "emoji": "🏆",
+      "color": "#eab308",
+      "events": [
+        {"id": "sp1", "title": "中国男足战胜日本", "rank": 1, "hotValue": 1230000, "heatScore": 850, "category": "sports", "trend": "rising"},
+        {"id": "sp2", "title": "王曼昱比赛", "rank": 12, "hotValue": 320000, "heatScore": 220, "category": "sports", "trend": "stable"}
+      ],
+      "totalHeat": 1200000
+    },
+    "tech": {
+      "id": "tech",
+      "name": "科技互联网",
+      "emoji": "🤖",
+      "color": "#8b5cf6",
+      "events": [
+        {"id": "t1", "title": "手机涨价", "rank": 2, "hotValue": 1060000, "heatScore": 720, "category": "tech", "trend": "stable"}
+      ],
+      "totalHeat": 650000
+    }
+  },
+  "topEvents": [
+    {"id": "sp1", "title": "中国男足战胜日本", "rank": 1, "hotValue": 1230000, "category": "sports", "trend": "rising"},
+    {"id": "t1", "title": "手机涨价", "rank": 2, "hotValue": 1060000, "category": "tech", "trend": "stable"},
+    {"id": "e1", "title": "杨幂新剧", "rank": 3, "hotValue": 980000, "category": "entertainment", "trend": "rising"},
+    {"id": "b1", "title": "银发经济", "rank": 4, "hotValue": 850000, "category": "business", "trend": "stable"},
+    {"id": "s1", "title": "江西车祸", "rank": 5, "hotValue": 450000, "category": "social", "trend": "falling"}
+  ]
+}
