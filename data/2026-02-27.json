@@ -1,18 +1,18 @@
 {
   "date": "2026-02-27",
   "timeRange": "00:00-24:00",
-  "generatedAt": "2026-02-27T17:14:08.973384",
+  "generatedAt": "2026-02-27T19:13:59.004973",
   "summary": {
-    "totalEvents": 268,
-    "totalHeat": 43757149.899172656,
-    "categoryCount": 9,
+    "totalEvents": 315,
+    "totalHeat": 49636082.69495392,
+    "categoryCount": 10,
     "newEvents": 0,
     "peakEvent": {
-      "id": "aab5bc3dda53",
-      "title": "24岁女生成功诞下1男4女5胞胎",
+      "id": "77fcc224dd5c",
+      "title": "逐玉",
       "rank": 1,
-      "hotValue": 1051189,
-      "heatScore": 105.11896138809193,
+      "hotValue": 1128440,
+      "heatScore": 112.8440340422333,
       "category": "entertainment",
       "trend": "stable"
     },
@@ -32,9 +32,18 @@
       "color": "#a855f7",
       "events": [
         {
+          "id": "77fcc224dd5c",
+          "title": "逐玉",
+          "rank": 1,
+          "hotValue": 1128440,
+          "heatScore": 112.8440340422333,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "aab5bc3dda53",
           "title": "24岁女生成功诞下1男4女5胞胎",
-          "rank": 1,
+          "rank": 2,
           "hotValue": 1051189,
           "heatScore": 105.11896138809193,
           "category": "entertainment",
@@ -43,7 +52,7 @@
         {
           "id": "33fbfcb5a4ca",
           "title": "男子谎称走亲戚欲把7岁儿子留老家",
-          "rank": 3,
+          "rank": 4,
           "hotValue": 941015,
           "heatScore": 94.10152793288185,
           "category": "entertainment",
@@ -52,34 +61,43 @@
         {
           "id": "c6f1c5ef7fca",
           "title": "美国发动网攻侵占全球虚拟资产",
-          "rank": 4,
+          "rank": 5,
           "hotValue": 919609,
           "heatScore": 91.96097359445882,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "77fcc224dd5c",
-          "title": "逐玉",
-          "rank": 5,
-          "hotValue": 875904,
-          "heatScore": 87.59045928504104,
+          "id": "65baba53a43e",
+          "title": "六级",
+          "rank": 7,
+          "hotValue": 727703,
+          "heatScore": 72.77035595031502,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "7f55d1f61ca1",
           "title": "四六级查分",
-          "rank": 8,
+          "rank": 9,
           "hotValue": 713218,
           "heatScore": 71.32180991692925,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "4dd9bfd96d16",
+          "title": "现在就出发4",
+          "rank": 10,
+          "hotValue": 699318,
+          "heatScore": 69.93189443302921,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "f66696d78922",
           "title": "飞驰人生3",
-          "rank": 10,
+          "rank": 12,
           "hotValue": 694234,
           "heatScore": 69.42340984630451,
           "category": "entertainment",
@@ -88,43 +106,34 @@
         {
           "id": "d2be2f79e3db",
           "title": "杨幂TOP坐一起",
-          "rank": 11,
+          "rank": 13,
           "hotValue": 682309,
           "heatScore": 68.2309975221695,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "65baba53a43e",
-          "title": "六级",
-          "rank": 15,
-          "hotValue": 610439,
-          "heatScore": 61.043989092863285,
+          "id": "096c5cb39667",
+          "title": "不建议在朋友圈展示技能",
+          "rank": 14,
+          "hotValue": 679968,
+          "heatScore": 67.99686604171598,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "4313a604f506",
           "title": "父亲退还18.8万彩礼新娘发声",
-          "rank": 17,
+          "rank": 19,
           "hotValue": 546634,
           "heatScore": 54.66341443233861,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "096c5cb39667",
-          "title": "不建议在朋友圈展示技能",
-          "rank": 18,
-          "hotValue": 546558,
-          "heatScore": 54.655841595997835,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "ff5316b95acd",
           "title": "南京档案馆找到谷爱凌外婆户籍卡",
-          "rank": 19,
+          "rank": 20,
           "hotValue": 538441,
           "heatScore": 53.844136639777226,
           "category": "entertainment",
@@ -133,18 +142,9 @@
         {
           "id": "76d7afaa98c5",
           "title": "迪丽热巴 瓦猫",
-          "rank": 22,
+          "rank": 23,
           "hotValue": 447026,
           "heatScore": 44.702663310865816,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
-          "id": "4dd9bfd96d16",
-          "title": "现在就出发4",
-          "rank": 23,
-          "hotValue": 446223,
-          "heatScore": 44.62230743991294,
           "category": "entertainment",
           "trend": "stable"
         },
@@ -158,9 +158,18 @@
           "trend": "stable"
         },
         {
+          "id": "e45a4665a970",
+          "title": "尘白禁区联动取消",
+          "rank": 25,
+          "hotValue": 432892,
+          "heatScore": 43.28924587691685,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "d0f433e8aa5b",
           "title": "BLACKPINK 回归",
-          "rank": 26,
+          "rank": 27,
           "hotValue": 415426,
           "heatScore": 41.542648349682885,
           "category": "entertainment",
@@ -169,18 +178,9 @@
         {
           "id": "de6361a4b5dc",
           "title": "肖战Gucci看秀待遇",
-          "rank": 27,
+          "rank": 28,
           "hotValue": 413351,
           "heatScore": 41.33514970144272,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
-          "id": "e45a4665a970",
-          "title": "尘白禁区联动取消",
-          "rank": 28,
-          "hotValue": 408331,
-          "heatScore": 40.83319262866382,
           "category": "entertainment",
           "trend": "stable"
         },
@@ -230,9 +230,18 @@
           "trend": "stable"
         },
         {
+          "id": "cf04f99e48ed",
+          "title": "替父请假2小时致其被开除女子发声",
+          "rank": 36,
+          "hotValue": 360979,
+          "heatScore": 36.09797810302392,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "d121eb88ae53",
           "title": "山西卫健委已严肃约谈市急救中心",
-          "rank": 36,
+          "rank": 37,
           "hotValue": 360179,
           "heatScore": 36.01791968188112,
           "category": "entertainment",
@@ -241,7 +250,7 @@
         {
           "id": "a35a23e2c331",
           "title": "网传浪姐7参赛名单",
-          "rank": 37,
+          "rank": 38,
           "hotValue": 356286,
           "heatScore": 35.62862438360258,
           "category": "entertainment",
@@ -250,7 +259,7 @@
         {
           "id": "c557e6549825",
           "title": "虞书欣红衣主母跳惊鸿一面",
-          "rank": 40,
+          "rank": 41,
           "hotValue": 339594,
           "heatScore": 33.9594882468552,
           "category": "entertainment",
@@ -259,25 +268,34 @@
         {
           "id": "af75e18df74e",
           "title": "刘诗诗头戴非遗绒花高雅动人",
-          "rank": 41,
+          "rank": 42,
           "hotValue": 338362,
           "heatScore": 33.836287875190415,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "cf04f99e48ed",
-          "title": "替父请假2小时致其被开除女子发声",
-          "rank": 42,
-          "hotValue": 325327,
-          "heatScore": 32.53271213248484,
+          "id": "ceb85206f852",
+          "title": "43岁也能考编了",
+          "rank": 43,
+          "hotValue": 323301,
+          "heatScore": 32.33017119903256,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "d593151bcda7",
+          "title": "姜妍常驻现在就出发",
+          "rank": 44,
+          "hotValue": 315485,
+          "heatScore": 31.548539119923063,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "7767438a94e3",
           "title": "搞对象后弟弟的变化",
-          "rank": 43,
+          "rank": 45,
           "hotValue": 312873,
           "heatScore": 31.287324227888607,
           "category": "entertainment",
@@ -286,7 +304,7 @@
         {
           "id": "0b1df71940eb",
           "title": "周冬雨自曝和余文乐录恋综很走心",
-          "rank": 44,
+          "rank": 46,
           "hotValue": 306967,
           "heatScore": 30.696719347769523,
           "category": "entertainment",
@@ -295,7 +313,7 @@
         {
           "id": "f1a996a00539",
           "title": "11月宝宝从婴儿车滑落颅脑重伤",
-          "rank": 45,
+          "rank": 47,
           "hotValue": 305357,
           "heatScore": 30.535784181855064,
           "category": "entertainment",
@@ -304,7 +322,7 @@
         {
           "id": "f7cec04e06c3",
           "title": "FIBA社媒称中国男篮偷走胜利",
-          "rank": 46,
+          "rank": 48,
           "hotValue": 300614,
           "heatScore": 30.061455535847777,
           "category": "entertainment",
@@ -313,7 +331,7 @@
         {
           "id": "49ba030c9043",
           "title": "全网最黑大熊猫出现了",
-          "rank": 48,
+          "rank": 50,
           "hotValue": 295542,
           "heatScore": 29.55429332833174,
           "category": "entertainment",
@@ -322,7 +340,7 @@
         {
           "id": "6cefc92d5a8f",
           "title": "全国妈妈的统一夜晚",
-          "rank": 49,
+          "rank": 51,
           "hotValue": 293430,
           "heatScore": 29.343000074552137,
           "category": "entertainment",
@@ -331,7 +349,7 @@
         {
           "id": "446f91457820",
           "title": "纯真年代的爱情",
-          "rank": 50,
+          "rank": 52,
           "hotValue": 292311,
           "heatScore": 29.231130489170702,
           "category": "entertainment",
@@ -340,7 +358,7 @@
         {
           "id": "7c147d717c9b",
           "title": "网约车电车晕车的原因",
-          "rank": 51,
+          "rank": 53,
           "hotValue": 284028,
           "heatScore": 28.402839106825844,
           "category": "entertainment",
@@ -349,7 +367,7 @@
         {
           "id": "f88863887d20",
           "title": "30秒内3次预警救了一车人",
-          "rank": 52,
+          "rank": 54,
           "hotValue": 271784,
           "heatScore": 27.178440652871412,
           "category": "entertainment",
@@ -358,7 +376,7 @@
         {
           "id": "414f252522ec",
           "title": "千元机或将消失",
-          "rank": 53,
+          "rank": 55,
           "hotValue": 267251,
           "heatScore": 26.72516785701288,
           "category": "entertainment",
@@ -367,25 +385,25 @@
         {
           "id": "a57401c908fc",
           "title": "费霓怀孕",
-          "rank": 55,
+          "rank": 59,
           "hotValue": 260036,
           "heatScore": 26.003620273386684,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "d593151bcda7",
-          "title": "姜妍常驻现在就出发",
-          "rank": 59,
-          "hotValue": 249870,
-          "heatScore": 24.987068384351147,
+          "id": "952cb8d28df5",
+          "title": "白敬亭章若楠 二搭",
+          "rank": 61,
+          "hotValue": 256856,
+          "heatScore": 25.685606277575182,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "7f4ceb2a79e2",
           "title": "金泰梨对杨幂比心",
-          "rank": 60,
+          "rank": 63,
           "hotValue": 247748,
           "heatScore": 24.774831876236746,
           "category": "entertainment",
@@ -394,7 +412,7 @@
         {
           "id": "bbad16d35095",
           "title": "橹穆双人舞台官摄破2711万",
-          "rank": 61,
+          "rank": 64,
           "hotValue": 247715,
           "heatScore": 24.771585897699822,
           "category": "entertainment",
@@ -403,7 +421,7 @@
         {
           "id": "8e5e7cc32b46",
           "title": "怪不得高启强不让他弟碰毒",
-          "rank": 62,
+          "rank": 65,
           "hotValue": 247677,
           "heatScore": 24.767771741309858,
           "category": "entertainment",
@@ -412,16 +430,34 @@
         {
           "id": "64731dcc820a",
           "title": "杨幂Prada顶级待遇",
-          "rank": 63,
+          "rank": 66,
           "hotValue": 247213,
           "heatScore": 24.721314988938367,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "cd1a87b25252",
+          "title": "头像洁癖",
+          "rank": 67,
+          "hotValue": 243132,
+          "heatScore": 24.313212107250045,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "6d5c638d3c4f",
+          "title": "新娘出嫁徒手拔光碎发",
+          "rank": 68,
+          "hotValue": 242668,
+          "heatScore": 24.266849376168157,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "c44b07e99d9e",
           "title": "陈丽君台湾巡演人气大爆",
-          "rank": 64,
+          "rank": 69,
           "hotValue": 242223,
           "heatScore": 24.222363193588336,
           "category": "entertainment",
@@ -430,7 +466,7 @@
         {
           "id": "da00b6f4b6af",
           "title": "好潦草的烟花真是设计鬼才",
-          "rank": 65,
+          "rank": 70,
           "hotValue": 235297,
           "heatScore": 23.529707118555347,
           "category": "entertainment",
@@ -439,7 +475,7 @@
         {
           "id": "0cd6e4072a3d",
           "title": "宝格丽代言人名单",
-          "rank": 66,
+          "rank": 71,
           "hotValue": 230052,
           "heatScore": 23.005222176459533,
           "category": "entertainment",
@@ -448,16 +484,34 @@
         {
           "id": "d88c3223669a",
           "title": "魅族公告",
-          "rank": 67,
+          "rank": 72,
           "hotValue": 223658,
           "heatScore": 22.36580268508466,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "8c7a06009877",
+          "title": "虞书欣父亲借贷案三大焦点",
+          "rank": 73,
+          "hotValue": 223343,
+          "heatScore": 22.33434543868307,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "2f2f40e32f23",
+          "title": "TODS大秀",
+          "rank": 76,
+          "hotValue": 215760,
+          "heatScore": 21.57609281932502,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "cf591b7d2078",
           "title": "网传现在就出发4没有金晨",
-          "rank": 68,
+          "rank": 77,
           "hotValue": 215476,
           "heatScore": 21.547630695945642,
           "category": "entertainment",
@@ -466,16 +520,25 @@
         {
           "id": "b235d759095c",
           "title": "00后女骑手送餐遭顾客骚扰报警",
-          "rank": 69,
+          "rank": 78,
           "hotValue": 214488,
           "heatScore": 21.448841261290973,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "c61fcb76b8a3",
+          "title": "姐姐姐夫",
+          "rank": 80,
+          "hotValue": 211190,
+          "heatScore": 21.11908923639484,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "75971a35ec0f",
           "title": "彪马店员说买不起别试",
-          "rank": 71,
+          "rank": 81,
           "hotValue": 208133,
           "heatScore": 20.813369148324178,
           "category": "entertainment",
@@ -484,7 +547,7 @@
         {
           "id": "c644dc911d5f",
           "title": "Prada生图",
-          "rank": 74,
+          "rank": 84,
           "hotValue": 205952,
           "heatScore": 20.595230161700155,
           "category": "entertainment",
@@ -493,25 +556,16 @@
         {
           "id": "01569cbd2ca8",
           "title": "嘉人单发苏新皓",
-          "rank": 75,
+          "rank": 85,
           "hotValue": 204349,
           "heatScore": 20.434942241100465,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "c61fcb76b8a3",
-          "title": "姐姐姐夫",
-          "rank": 76,
-          "hotValue": 200884,
-          "heatScore": 20.08843177756661,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "2d1aa6e413c7",
           "title": "最容易胖肚子的一种食物",
-          "rank": 77,
+          "rank": 86,
           "hotValue": 199144,
           "heatScore": 19.914446281522764,
           "category": "entertainment",
@@ -520,7 +574,7 @@
         {
           "id": "a8f2440a8447",
           "title": "巴基斯坦空袭阿富汗",
-          "rank": 78,
+          "rank": 87,
           "hotValue": 196453,
           "heatScore": 19.645328998679226,
           "category": "entertainment",
@@ -529,52 +583,70 @@
         {
           "id": "ed51443e1c20",
           "title": "伊朗威胁美国",
-          "rank": 79,
+          "rank": 88,
           "hotValue": 195091,
           "heatScore": 19.50916799151387,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "649d32a08529",
+          "title": "超短学期",
+          "rank": 89,
+          "hotValue": 189997,
+          "heatScore": 18.999748079066073,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "05f29db89ed4",
           "title": "谷爱凌Prada看秀",
-          "rank": 80,
+          "rank": 90,
           "hotValue": 189381,
           "heatScore": 18.938177173771802,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "ac480099dd88",
+          "title": "见春天 陈飞宇王影璐",
+          "rank": 92,
+          "hotValue": 184074,
+          "heatScore": 18.40749261782703,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "5ad9e13ac92f",
           "title": "孙燕姿新歌飞瀑而下",
-          "rank": 81,
+          "rank": 93,
           "hotValue": 180900,
           "heatScore": 18.09007563837092,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "56e922396f72",
+          "title": "P图的时候忘记P的是实况",
+          "rank": 94,
+          "hotValue": 178956,
+          "heatScore": 17.895686253894485,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "97eef940b8b9",
           "title": "杨幂谷爱凌秀场聊天",
-          "rank": 82,
+          "rank": 95,
           "hotValue": 177042,
           "heatScore": 17.70427860324473,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "8c7a06009877",
-          "title": "虞书欣父亲借贷案三大焦点",
-          "rank": 83,
-          "hotValue": 171193,
-          "heatScore": 17.119382292165334,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "c5565bbc0269",
           "title": "赖清德罕见改口称中国大陆",
-          "rank": 84,
+          "rank": 96,
           "hotValue": 170613,
           "heatScore": 17.061390936331563,
           "category": "entertainment",
@@ -583,7 +655,7 @@
         {
           "id": "cae3d09c52c0",
           "title": "极客湾",
-          "rank": 86,
+          "rank": 97,
           "hotValue": 164307,
           "heatScore": 16.430718960988166,
           "category": "entertainment",
@@ -592,16 +664,25 @@
         {
           "id": "3a6f6bb1c867",
           "title": "郭富城一家去景区只用买一张票",
-          "rank": 87,
+          "rank": 98,
           "hotValue": 163947,
           "heatScore": 16.3947579719041,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "bec52fb2f1db",
+          "title": "肖战米兰看秀造型",
+          "rank": 100,
+          "hotValue": 163027,
+          "heatScore": 16.302706866623495,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "404f3cfb1ec1",
           "title": "7月大女婴坠入开水锅母亲发声",
-          "rank": 88,
+          "rank": 101,
           "hotValue": 162615,
           "heatScore": 16.261508672980522,
           "category": "entertainment",
@@ -610,7 +691,7 @@
         {
           "id": "3ac1fcb817c0",
           "title": "比尔盖茨被曝是裸体夜店常客",
-          "rank": 89,
+          "rank": 102,
           "hotValue": 162062,
           "heatScore": 16.206283301527606,
           "category": "entertainment",
@@ -619,7 +700,7 @@
         {
           "id": "8d770e4e426e",
           "title": "中国男篮战胜日本男篮",
-          "rank": 90,
+          "rank": 103,
           "hotValue": 161376,
           "heatScore": 16.13765315266315,
           "category": "entertainment",
@@ -628,7 +709,7 @@
         {
           "id": "0f6ad337350e",
           "title": "刘宇宁到了现代剧也是一身侠气",
-          "rank": 91,
+          "rank": 104,
           "hotValue": 160583,
           "heatScore": 16.05839413878006,
           "category": "entertainment",
@@ -637,7 +718,7 @@
         {
           "id": "a8426d25a9df",
           "title": "曝白宇还和刘萌萌在一起",
-          "rank": 92,
+          "rank": 105,
           "hotValue": 158892,
           "heatScore": 15.889202780292411,
           "category": "entertainment",
@@ -646,7 +727,7 @@
         {
           "id": "b6c3fa54d8f8",
           "title": "王楚钦说太累了比干七局还累",
-          "rank": 93,
+          "rank": 106,
           "hotValue": 156423,
           "heatScore": 15.64237716807008,
           "category": "entertainment",
@@ -655,43 +736,70 @@
         {
           "id": "edc2b45106d1",
           "title": "王橹杰手捧红玫瑰",
-          "rank": 94,
+          "rank": 107,
           "hotValue": 154791,
           "heatScore": 15.479199106864193,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "d2c7e7e65f4d",
+          "title": "妈妈在女儿婚礼上美出圈",
+          "rank": 108,
+          "hotValue": 154061,
+          "heatScore": 15.406149577965609,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "d5364552d7d0",
           "title": "BLACKPINK GO MV",
-          "rank": 95,
+          "rank": 109,
           "hotValue": 150946,
           "heatScore": 15.094647437150435,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "ac71317a3e2e",
+          "title": "新春走基层看见生态牧歌",
+          "rank": 111,
+          "hotValue": 146715,
+          "heatScore": 14.671560108593546,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "65d8ab14e427",
           "title": "可以恢复视力的微习惯",
-          "rank": 97,
+          "rank": 113,
           "hotValue": 142447,
           "heatScore": 14.244783195254438,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "ceb85206f852",
-          "title": "43岁也能考编了",
-          "rank": 98,
-          "hotValue": 137211,
-          "heatScore": 13.72110008456631,
+          "id": "14d63f72bfdc",
+          "title": "李亚鹏官宣与哥哥和解",
+          "rank": 114,
+          "hotValue": 138834,
+          "heatScore": 13.883478483321674,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "103c113020ed",
+          "title": "36岁程序员被曝复工当晚猝死",
+          "rank": 115,
+          "hotValue": 137417,
+          "heatScore": 13.74170469150865,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "8b184b6e8277",
           "title": "TOP登陆少年首张实体专",
-          "rank": 100,
+          "rank": 117,
           "hotValue": 129414,
           "heatScore": 12.941403507583471,
           "category": "entertainment",
@@ -700,7 +808,7 @@
         {
           "id": "a145ccec4f79",
           "title": "程晓玥自曝孕晚期呼吸很困难",
-          "rank": 103,
+          "rank": 119,
           "hotValue": 126231,
           "heatScore": 12.623188985445472,
           "category": "entertainment",
@@ -709,7 +817,7 @@
         {
           "id": "b912ad2f4388",
           "title": "沈月个人工作室",
-          "rank": 104,
+          "rank": 120,
           "hotValue": 124548,
           "heatScore": 12.454801301644698,
           "category": "entertainment",
@@ -718,7 +826,7 @@
         {
           "id": "351ed1cc4ea1",
           "title": "胡一菲诺澜在短国相遇了",
-          "rank": 105,
+          "rank": 121,
           "hotValue": 124038,
           "heatScore": 12.403846204248218,
           "category": "entertainment",
@@ -727,25 +835,52 @@
         {
           "id": "92a385c032ee",
           "title": "Cat退役发长文",
-          "rank": 106,
+          "rank": 122,
           "hotValue": 123665,
           "heatScore": 12.366565182600217,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "f1f9045bfeec",
+          "title": "伊能静 真的别再雌竞了",
+          "rank": 124,
+          "hotValue": 122984,
+          "heatScore": 12.298402512435805,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "93962acd6491",
           "title": "创造营2026女生季",
-          "rank": 108,
+          "rank": 125,
           "hotValue": 121559,
           "heatScore": 12.155957676782629,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "19e4ca24e941",
+          "title": "退房的时候前台拿了个徐福记的糖纸",
+          "rank": 128,
+          "hotValue": 117344,
+          "heatScore": 11.734488593270768,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "034772923bd6",
+          "title": "魅族",
+          "rank": 130,
+          "hotValue": 115344,
+          "heatScore": 11.534453015061343,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "467090f61d88",
           "title": "aespa新歌",
-          "rank": 111,
+          "rank": 131,
           "hotValue": 111977,
           "heatScore": 11.197752278821973,
           "category": "entertainment",
@@ -754,7 +889,7 @@
         {
           "id": "186433324566",
           "title": "王一博2026春晚完整彩排视频",
-          "rank": 112,
+          "rank": 132,
           "hotValue": 109112,
           "heatScore": 10.911238639121382,
           "category": "entertainment",
@@ -763,7 +898,7 @@
         {
           "id": "552333a2f4a5",
           "title": "李家福曾建议诞5胞胎女子减胎",
-          "rank": 114,
+          "rank": 134,
           "hotValue": 108109,
           "heatScore": 10.81097733316047,
           "category": "entertainment",
@@ -772,7 +907,7 @@
         {
           "id": "b83f54b15493",
           "title": "孙千这段尴尬的我狂笑",
-          "rank": 115,
+          "rank": 136,
           "hotValue": 106138,
           "heatScore": 10.61388233679422,
           "category": "entertainment",
@@ -781,7 +916,7 @@
         {
           "id": "c454c6ee0a3c",
           "title": "特朗普威胁驱逐教父饰演者",
-          "rank": 116,
+          "rank": 137,
           "hotValue": 102721,
           "heatScore": 10.27210461683898,
           "category": "entertainment",
@@ -790,7 +925,7 @@
         {
           "id": "800c0a744c58",
           "title": "吴孟达离开已经五年了",
-          "rank": 117,
+          "rank": 138,
           "hotValue": 102152,
           "heatScore": 10.215223995266362,
           "category": "entertainment",
@@ -799,7 +934,7 @@
         {
           "id": "eab0d0266cb9",
           "title": "愿你刷到日照金山好运拉满",
-          "rank": 118,
+          "rank": 139,
           "hotValue": 100026,
           "heatScore": 10.002651126053319,
           "category": "entertainment",
@@ -808,7 +943,7 @@
         {
           "id": "f40fb92da400",
           "title": "TOP大秀现场",
-          "rank": 119,
+          "rank": 140,
           "hotValue": 98460,
           "heatScore": 9.84604412784401,
           "category": "entertainment",
@@ -817,34 +952,34 @@
         {
           "id": "1e8cf45dee83",
           "title": "一趟列车24站解锁200多家景区",
-          "rank": 120,
+          "rank": 141,
           "hotValue": 98425,
           "heatScore": 9.842534331897376,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "f1f9045bfeec",
-          "title": "伊能静 真的别再雌竞了",
-          "rank": 121,
-          "hotValue": 95859,
-          "heatScore": 9.585999550964305,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "fc4fccea9e58",
           "title": "JDG战胜AL",
-          "rank": 122,
+          "rank": 142,
           "hotValue": 92589,
           "heatScore": 9.258975011103816,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "14ac89c070d2",
+          "title": "镖人破十亿刀马谛听番外",
+          "rank": 143,
+          "hotValue": 92193,
+          "heatScore": 9.219381806697378,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "f26efc692514",
           "title": "奔驰CEO拍宇树机器人发给家人",
-          "rank": 123,
+          "rank": 144,
           "hotValue": 91484,
           "heatScore": 9.148411064073542,
           "category": "entertainment",
@@ -853,7 +988,7 @@
         {
           "id": "e30dc624cfe2",
           "title": "曝程相李佳洁恋情",
-          "rank": 124,
+          "rank": 145,
           "hotValue": 91211,
           "heatScore": 9.121146130056413,
           "category": "entertainment",
@@ -862,7 +997,7 @@
         {
           "id": "657a0ad71be6",
           "title": "兔闪闪道歉",
-          "rank": 125,
+          "rank": 146,
           "hotValue": 88632,
           "heatScore": 8.863270212381654,
           "category": "entertainment",
@@ -871,43 +1006,52 @@
         {
           "id": "dcf8a30d84e3",
           "title": "云初令",
-          "rank": 126,
+          "rank": 147,
           "hotValue": 88297,
           "heatScore": 8.829707702179785,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "bec52fb2f1db",
-          "title": "肖战米兰看秀造型",
-          "rank": 127,
-          "hotValue": 87848,
-          "heatScore": 8.784812298922233,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "b3b924ae680b",
           "title": "开工1天签5千万单的女子再签4千万",
-          "rank": 129,
+          "rank": 149,
           "hotValue": 85610,
           "heatScore": 8.561032310660494,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "cd1a87b25252",
-          "title": "头像洁癖",
-          "rank": 130,
-          "hotValue": 84258,
-          "heatScore": 8.425825949303388,
+          "id": "3a590a8625cd",
+          "title": "下一个是谁",
+          "rank": 150,
+          "hotValue": 84407,
+          "heatScore": 8.44070547683694,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "6e187c7307cb",
+          "title": "杨幂唐嫣看秀生图",
+          "rank": 151,
+          "hotValue": 82680,
+          "heatScore": 8.26808306992265,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "62eab687dbdb",
+          "title": "原来新质生产力正在改变我们的生活",
+          "rank": 152,
+          "hotValue": 82497,
+          "heatScore": 8.249765887108643,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "d64c6a1ec1d5",
           "title": "王天辰郭晓婷花絮好甜",
-          "rank": 132,
+          "rank": 153,
           "hotValue": 82022,
           "heatScore": 8.202244657495358,
           "category": "entertainment",
@@ -916,7 +1060,7 @@
         {
           "id": "54dd1adfbab8",
           "title": "王楚钦1比7落后逆转",
-          "rank": 134,
+          "rank": 155,
           "hotValue": 81492,
           "heatScore": 8.149200024163438,
           "category": "entertainment",
@@ -925,16 +1069,25 @@
         {
           "id": "902ac4e5e5a7",
           "title": "杨幂登陆少年组合Prada大秀同框",
-          "rank": 135,
+          "rank": 156,
           "hotValue": 80409,
           "heatScore": 8.040932827017828,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "9dd4f1d1cac6",
+          "title": "赵晴好灵",
+          "rank": 158,
+          "hotValue": 79923,
+          "heatScore": 7.992391536165806,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "022556aa238b",
           "title": "曝迪丽热巴与嘉行合约到期",
-          "rank": 137,
+          "rank": 159,
           "hotValue": 78984,
           "heatScore": 7.898452736574667,
           "category": "entertainment",
@@ -943,7 +1096,7 @@
         {
           "id": "6217ecb8c099",
           "title": "金泰梨裤子",
-          "rank": 138,
+          "rank": 160,
           "hotValue": 78756,
           "heatScore": 7.875616994972613,
           "category": "entertainment",
@@ -952,7 +1105,7 @@
         {
           "id": "ddd5d7b98990",
           "title": "德企高管踮着脚看中国机器人",
-          "rank": 139,
+          "rank": 161,
           "hotValue": 78593,
           "heatScore": 7.8593506593225175,
           "category": "entertainment",
@@ -961,7 +1114,7 @@
         {
           "id": "88b7aa56caa1",
           "title": "杨幂怼脸镜头好美",
-          "rank": 141,
+          "rank": 163,
           "hotValue": 77829,
           "heatScore": 7.7829715739950505,
           "category": "entertainment",
@@ -970,7 +1123,7 @@
         {
           "id": "12815f543b67",
           "title": "恋与深空",
-          "rank": 142,
+          "rank": 164,
           "hotValue": 76863,
           "heatScore": 7.686300252486658,
           "category": "entertainment",
@@ -979,16 +1132,25 @@
         {
           "id": "65bba2ca53f7",
           "title": "方圆脸如何颜值最大化",
-          "rank": 143,
+          "rank": 165,
           "hotValue": 76749,
           "heatScore": 7.674947342130205,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "bf403b04b901",
+          "title": "东莞几百辆纯电公交因电池故障停运",
+          "rank": 167,
+          "hotValue": 75156,
+          "heatScore": 7.51564769205213,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "ea1eba6f749a",
           "title": "28岁小伙长期吃炸鸡抽出猪油汤血",
-          "rank": 145,
+          "rank": 168,
           "hotValue": 74733,
           "heatScore": 7.473325773362015,
           "category": "entertainment",
@@ -997,7 +1159,7 @@
         {
           "id": "0e2dae820af2",
           "title": "山东一工厂开工员工集体跪拜",
-          "rank": 146,
+          "rank": 169,
           "hotValue": 74726,
           "heatScore": 7.472650451091034,
           "category": "entertainment",
@@ -1006,7 +1168,7 @@
         {
           "id": "558a94e97c16",
           "title": "徐志胜贴脸开大宋妍霏臭脸",
-          "rank": 148,
+          "rank": 172,
           "hotValue": 74523,
           "heatScore": 7.4523722456743435,
           "category": "entertainment",
@@ -1015,7 +1177,7 @@
         {
           "id": "d5cfbb329025",
           "title": "一觉醒来北京雪景上线",
-          "rank": 149,
+          "rank": 173,
           "hotValue": 74302,
           "heatScore": 7.430222890074597,
           "category": "entertainment",
@@ -1024,16 +1186,34 @@
         {
           "id": "77c7e7809853",
           "title": "工业辣椒挂禁止食用提示牌引热议",
-          "rank": 150,
+          "rank": 174,
           "hotValue": 72862,
           "heatScore": 7.286226886341739,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "2ac254743ec5",
+          "title": "母子溺亡村民称是非法采砂遗留水坑",
+          "rank": 175,
+          "hotValue": 72593,
+          "heatScore": 7.259308461717913,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "dd246bff0c5c",
+          "title": "今天的饺子是王一博擀的皮",
+          "rank": 177,
+          "hotValue": 71702,
+          "heatScore": 7.170272144839266,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "1e0eeed7f428",
           "title": "退彩礼父亲说若儿媳妇要彩礼照样给",
-          "rank": 151,
+          "rank": 178,
           "hotValue": 70398,
           "heatScore": 7.039804587999677,
           "category": "entertainment",
@@ -1042,43 +1222,52 @@
         {
           "id": "f6facdc22f91",
           "title": "张艺兴小张入职第一天",
-          "rank": 153,
+          "rank": 180,
           "hotValue": 68781,
           "heatScore": 6.878197166647124,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "38c2923daa4d",
+          "title": "AG对战RW",
+          "rank": 182,
+          "hotValue": 67801,
+          "heatScore": 6.780100286618381,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "12747d925ddb",
           "title": "王安宇 毕正明的证明",
-          "rank": 154,
+          "rank": 183,
           "hotValue": 65801,
           "heatScore": 6.580132550864024,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "dd246bff0c5c",
-          "title": "今天的饺子是王一博擀的皮",
-          "rank": 155,
-          "hotValue": 65561,
-          "heatScore": 6.55619385843486,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "d7fbe948a1dd",
           "title": "KPL春季赛",
-          "rank": 156,
+          "rank": 184,
           "hotValue": 65548,
           "heatScore": 6.554804544996328,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "7caa89f44b4c",
+          "title": "李胜利的狱友repo",
+          "rank": 186,
+          "hotValue": 65455,
+          "heatScore": 6.545557221205408,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "8ef8e1c66d5b",
           "title": "沈月持证上岗",
-          "rank": 158,
+          "rank": 187,
           "hotValue": 64699,
           "heatScore": 6.469986212743727,
           "category": "entertainment",
@@ -1087,7 +1276,7 @@
         {
           "id": "866010878cff",
           "title": "28岁王一博素颜状态",
-          "rank": 159,
+          "rank": 188,
           "hotValue": 63451,
           "heatScore": 6.345149716212253,
           "category": "entertainment",
@@ -1096,7 +1285,7 @@
         {
           "id": "b27ebc1f5c66",
           "title": "澳游客在泰路怒遭瑞典男子手刀身亡",
-          "rank": 160,
+          "rank": 189,
           "hotValue": 62070,
           "heatScore": 6.20708804625894,
           "category": "entertainment",
@@ -1105,34 +1294,25 @@
         {
           "id": "bb7aa7939ef1",
           "title": "痞幼泽龙约会",
-          "rank": 161,
+          "rank": 190,
           "hotValue": 61164,
           "heatScore": 6.116417355125989,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "034772923bd6",
-          "title": "魅族",
-          "rank": 162,
-          "hotValue": 60191,
-          "heatScore": 6.0191541494929455,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
-          "id": "ac480099dd88",
-          "title": "见春天 陈飞宇王影璐",
-          "rank": 163,
-          "hotValue": 60080,
-          "heatScore": 6.008032342187356,
+          "id": "c232092dd1bc",
+          "title": "向华强 向佐不能搞老三老四",
+          "rank": 191,
+          "hotValue": 60348,
+          "heatScore": 6.0348845535752424,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "63396358c680",
           "title": "林俊杰2026首支单曲",
-          "rank": 164,
+          "rank": 192,
           "hotValue": 60039,
           "heatScore": 6.003921745311853,
           "category": "entertainment",
@@ -1141,7 +1321,7 @@
         {
           "id": "c02dd7558d32",
           "title": "四级我恨你",
-          "rank": 165,
+          "rank": 193,
           "hotValue": 59042,
           "heatScore": 5.9042057901404,
           "category": "entertainment",
@@ -1150,7 +1330,7 @@
         {
           "id": "ef99f5acce9c",
           "title": "成都沪上阿姨HR辱骂求职者",
-          "rank": 166,
+          "rank": 194,
           "hotValue": 58518,
           "heatScore": 5.851858985716092,
           "category": "entertainment",
@@ -1159,7 +1339,7 @@
         {
           "id": "918925b67476",
           "title": "亲爱的客栈开播",
-          "rank": 167,
+          "rank": 196,
           "hotValue": 57459,
           "heatScore": 5.7459552725532586,
           "category": "entertainment",
@@ -1168,7 +1348,7 @@
         {
           "id": "d4e52eeb622a",
           "title": "田曦薇 樊长玉",
-          "rank": 169,
+          "rank": 198,
           "hotValue": 55232,
           "heatScore": 5.523294368819395,
           "category": "entertainment",
@@ -1177,7 +1357,7 @@
         {
           "id": "4eb7f54ac993",
           "title": "陈熠vs桥本帆乃香",
-          "rank": 170,
+          "rank": 199,
           "hotValue": 54522,
           "heatScore": 5.452220187011541,
           "category": "entertainment",
@@ -1186,16 +1366,25 @@
         {
           "id": "33a757a4deb7",
           "title": "没见过这么大笑的易烊千玺",
-          "rank": 171,
+          "rank": 200,
           "hotValue": 53821,
           "heatScore": 5.382107665188647,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "e270532536af",
+          "title": "德国总理在杭州吃了西湖醋鱼东坡肉",
+          "rank": 201,
+          "hotValue": 53725,
+          "heatScore": 5.372547994544422,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "c59a5b3a8aa3",
           "title": "张雅钦扛住了g社镜头",
-          "rank": 172,
+          "rank": 202,
           "hotValue": 52339,
           "heatScore": 5.233900474616588,
           "category": "entertainment",
@@ -1204,7 +1393,7 @@
         {
           "id": "d038cf01c12d",
           "title": "Cat毕业典礼",
-          "rank": 174,
+          "rank": 204,
           "hotValue": 50293,
           "heatScore": 5.029369350253785,
           "category": "entertainment",
@@ -1213,7 +1402,7 @@
         {
           "id": "1bf03935a348",
           "title": "FENDI法棍包续写传奇",
-          "rank": 175,
+          "rank": 205,
           "hotValue": 49880,
           "heatScore": 4.9880960921398785,
           "category": "entertainment",
@@ -1222,34 +1411,34 @@
         {
           "id": "f59a2ba641a2",
           "title": "淘宝图标 褪色",
-          "rank": 176,
+          "rank": 206,
           "hotValue": 49758,
           "heatScore": 4.975823887580031,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "6e079812c0f1",
+          "title": "于正新剧宣传博被说低俗",
+          "rank": 207,
+          "hotValue": 49041,
+          "heatScore": 4.90411645268179,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "065661028968",
           "title": "虞书欣父亲新增开庭公告",
-          "rank": 177,
+          "rank": 208,
           "hotValue": 47764,
           "heatScore": 4.776434781628232,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "56e922396f72",
-          "title": "P图的时候忘记P的是实况",
-          "rank": 178,
-          "hotValue": 47674,
-          "heatScore": 4.7674108332984675,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "6a3e18b96ba3",
           "title": "男子患肺结核过年串门引家族焦虑",
-          "rank": 179,
+          "rank": 209,
           "hotValue": 47454,
           "heatScore": 4.745426898948425,
           "category": "entertainment",
@@ -1258,7 +1447,7 @@
         {
           "id": "40a3bb486730",
           "title": "瘦了十来斤的陈飞宇",
-          "rank": 180,
+          "rank": 210,
           "hotValue": 47127,
           "heatScore": 4.712777246077927,
           "category": "entertainment",
@@ -1267,7 +1456,7 @@
         {
           "id": "d082273be421",
           "title": "饭后这样做瘦得更快",
-          "rank": 181,
+          "rank": 211,
           "hotValue": 46998,
           "heatScore": 4.699802429805561,
           "category": "entertainment",
@@ -1276,7 +1465,7 @@
         {
           "id": "a1c6af3e526b",
           "title": "唐宫奇案",
-          "rank": 182,
+          "rank": 212,
           "hotValue": 46498,
           "heatScore": 4.649856974415818,
           "category": "entertainment",
@@ -1285,25 +1474,34 @@
         {
           "id": "dc7a27f46ed2",
           "title": "柳智敏G社出图",
-          "rank": 183,
+          "rank": 213,
           "hotValue": 46314,
           "heatScore": 4.631434747508231,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "6d5c638d3c4f",
-          "title": "新娘出嫁徒手拔光碎发",
-          "rank": 184,
-          "hotValue": 45284,
-          "heatScore": 4.528457274309148,
+          "id": "7ff37f7c8a1c",
+          "title": "豆包严正声明",
+          "rank": 214,
+          "hotValue": 45323,
+          "heatScore": 4.532339340940546,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "f9a23448f4ce",
+          "title": "肖战秀场热到一直擦汗",
+          "rank": 215,
+          "hotValue": 44315,
+          "heatScore": 4.431571670112453,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "07f1e6670d1a",
           "title": "谷爱凌一边写作业一边和妈妈斗嘴",
-          "rank": 185,
+          "rank": 216,
           "hotValue": 43733,
           "heatScore": 4.373359537192704,
           "category": "entertainment",
@@ -1312,7 +1510,7 @@
         {
           "id": "50d656ac1f04",
           "title": "汪顺米兰时装周",
-          "rank": 186,
+          "rank": 217,
           "hotValue": 43723,
           "heatScore": 4.372384824652584,
           "category": "entertainment",
@@ -1321,7 +1519,7 @@
         {
           "id": "3e5905c792ce",
           "title": "尹净汉在香港",
-          "rank": 188,
+          "rank": 219,
           "hotValue": 42640,
           "heatScore": 4.264008258478358,
           "category": "entertainment",
@@ -1330,7 +1528,7 @@
         {
           "id": "d7afaec3ffc0",
           "title": "肖战申请强执黑粉",
-          "rank": 189,
+          "rank": 220,
           "hotValue": 41513,
           "heatScore": 4.151378035116365,
           "category": "entertainment",
@@ -1339,16 +1537,34 @@
         {
           "id": "0d3eb8756267",
           "title": "新款MacBookPro爆料",
-          "rank": 190,
+          "rank": 221,
           "hotValue": 41412,
           "heatScore": 4.141239527430675,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "fe8bb5d04a32",
+          "title": "你的刷牙时间可能一直是错的",
+          "rank": 224,
+          "hotValue": 39575,
+          "heatScore": 3.9575231724746716,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "55e869d7b2a8",
+          "title": "内娱男艺人要下海开酒吧了",
+          "rank": 225,
+          "hotValue": 37924,
+          "heatScore": 3.792432097364541,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "3ec12029ec0f",
           "title": "人一定要很金贵地对待自己",
-          "rank": 193,
+          "rank": 226,
           "hotValue": 37628,
           "heatScore": 3.7628575160538142,
           "category": "entertainment",
@@ -1357,25 +1573,16 @@
         {
           "id": "07881a2e6923",
           "title": "王天辰 上桌",
-          "rank": 194,
+          "rank": 227,
           "hotValue": 37621,
           "heatScore": 3.7621741024033617,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "7ff37f7c8a1c",
-          "title": "豆包严正声明",
-          "rank": 195,
-          "hotValue": 37135,
-          "heatScore": 3.7135553618833326,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "b9d3b7e07a00",
           "title": "向佑不满遗产分配直喊不公平",
-          "rank": 196,
+          "rank": 228,
           "hotValue": 36828,
           "heatScore": 3.6828948912448016,
           "category": "entertainment",
@@ -1384,7 +1591,7 @@
         {
           "id": "8a6cb0d4350d",
           "title": "北京下雪",
-          "rank": 197,
+          "rank": 229,
           "hotValue": 36164,
           "heatScore": 3.6164579313390357,
           "category": "entertainment",
@@ -1393,7 +1600,7 @@
         {
           "id": "42d8781f8737",
           "title": "张凯丽说唐国强蹭热度",
-          "rank": 198,
+          "rank": 231,
           "hotValue": 35187,
           "heatScore": 3.518714632591329,
           "category": "entertainment",
@@ -1402,34 +1609,43 @@
         {
           "id": "cbc9a3cd5503",
           "title": "陈垣宇3比1雨果",
-          "rank": 199,
+          "rank": 232,
           "hotValue": 35163,
           "heatScore": 3.516348712960102,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "6e187c7307cb",
-          "title": "杨幂唐嫣看秀生图",
-          "rank": 201,
-          "hotValue": 34787,
-          "heatScore": 3.478714629093199,
+          "id": "c3d3e4c300de",
+          "title": "张凌赫感谢林俊杰",
+          "rank": 234,
+          "hotValue": 34751,
+          "heatScore": 3.475111589776102,
           "category": "entertainment",
           "trend": "stable"
         },
         {
           "id": "61c36e8dc8a0",
           "title": "狄娜女士从艳星到中国卫星导航之母",
-          "rank": 202,
+          "rank": 235,
           "hotValue": 34319,
           "heatScore": 3.431926476845324,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "98f3afd572f8",
+          "title": "打卡地球最像月球的地方",
+          "rank": 236,
+          "hotValue": 33127,
+          "heatScore": 3.3127508051014525,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "ec3f0d4112ad",
           "title": "张若昀把王安宇逗掉凳了",
-          "rank": 203,
+          "rank": 237,
           "hotValue": 32592,
           "heatScore": 3.259274662595043,
           "category": "entertainment",
@@ -1438,7 +1654,7 @@
         {
           "id": "04e5730914ba",
           "title": "宋木子和张凌赫我还是分得清的",
-          "rank": 204,
+          "rank": 238,
           "hotValue": 32423,
           "heatScore": 3.242386496855543,
           "category": "entertainment",
@@ -1447,25 +1663,61 @@
         {
           "id": "528aafec1cb7",
           "title": "FIBA修改中国男篮赢球文案",
-          "rank": 205,
+          "rank": 239,
           "hotValue": 32266,
           "heatScore": 3.2266012974087857,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "1a8b08e73894",
+          "title": "杨本芬承认抄袭",
+          "rank": 240,
+          "hotValue": 32237,
+          "heatScore": 3.2237128006281095,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "1496fb780328",
           "title": "曝前UKISS成员东浩带儿子性交易",
-          "rank": 207,
+          "rank": 242,
           "hotValue": 30263,
           "heatScore": 3.0263136402755606,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "63bead6578b8",
+          "title": "王天辰 孩子太多了养不起",
+          "rank": 243,
+          "hotValue": 29930,
+          "heatScore": 2.9930834795748025,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "0ade2e7ac37f",
+          "title": "这么多年带出去玩的内衣都错付了",
+          "rank": 244,
+          "hotValue": 28209,
+          "heatScore": 2.82096670019546,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "675bcc7f8c3f",
+          "title": "柳智敏曾为当空姐学中文",
+          "rank": 245,
+          "hotValue": 28165,
+          "heatScore": 2.816523237517323,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "b17a5d27a41d",
           "title": "周冬雨喜欢不mean的男生",
-          "rank": 208,
+          "rank": 246,
           "hotValue": 27998,
           "heatScore": 2.799809703027562,
           "category": "entertainment",
@@ -1474,16 +1726,25 @@
         {
           "id": "374f1e3a8659",
           "title": "黎深恣情逐影",
-          "rank": 210,
+          "rank": 247,
           "hotValue": 27764,
           "heatScore": 2.776459424292758,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "3ec0471ba85f",
+          "title": "美国百万富翁在养老院被枪杀",
+          "rank": 248,
+          "hotValue": 27619,
+          "heatScore": 2.7619171127824096,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "0c800a77f591",
           "title": "苏新皓好贵",
-          "rank": 211,
+          "rank": 249,
           "hotValue": 27553,
           "heatScore": 2.755353766689585,
           "category": "entertainment",
@@ -1492,7 +1753,7 @@
         {
           "id": "4655db8d5ad5",
           "title": "张泽禹的手镯",
-          "rank": 212,
+          "rank": 250,
           "hotValue": 27464,
           "heatScore": 2.7464520340174197,
           "category": "entertainment",
@@ -1501,7 +1762,7 @@
         {
           "id": "37bf191afd70",
           "title": "迪丽热巴方辟谣瓦猫",
-          "rank": 213,
+          "rank": 251,
           "hotValue": 27453,
           "heatScore": 2.7453708072291203,
           "category": "entertainment",
@@ -1510,16 +1771,25 @@
         {
           "id": "b05cd65d8eb0",
           "title": "深圳湾公园晚上漆黑为让候鸟睡觉",
-          "rank": 215,
+          "rank": 253,
           "hotValue": 27098,
           "heatScore": 2.7098930410315734,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "500c2003af16",
+          "title": "黄晓明说范丞丞黄子韬给青岛人丢人",
+          "rank": 254,
+          "hotValue": 25816,
+          "heatScore": 2.581615659850974,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "337b106b7dc6",
           "title": "女子替父请假吃团圆饭父亲竟被辞退",
-          "rank": 216,
+          "rank": 255,
           "hotValue": 25670,
           "heatScore": 2.567061752793144,
           "category": "entertainment",
@@ -1528,7 +1798,7 @@
         {
           "id": "990b0fc843d1",
           "title": "TheShy现身WTT赛场",
-          "rank": 218,
+          "rank": 256,
           "hotValue": 25391,
           "heatScore": 2.539106179885762,
           "category": "entertainment",
@@ -1537,7 +1807,7 @@
         {
           "id": "d850e9b40e77",
           "title": "虎跳峡发疯石有游客坠江",
-          "rank": 219,
+          "rank": 258,
           "hotValue": 25149,
           "heatScore": 2.5149207734681083,
           "category": "entertainment",
@@ -1546,7 +1816,7 @@
         {
           "id": "0e40c9f78f10",
           "title": "何炅亲爱的客栈版十万个为什么",
-          "rank": 220,
+          "rank": 259,
           "hotValue": 25120,
           "heatScore": 2.5120049985556943,
           "category": "entertainment",
@@ -1555,16 +1825,25 @@
         {
           "id": "9f682735ac69",
           "title": "霍金遗属发声",
-          "rank": 221,
+          "rank": 260,
           "hotValue": 24798,
           "heatScore": 2.4798153334150745,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "82e9c5977ec0",
+          "title": "身份不明老人与鸡鸭同住环境恶劣",
+          "rank": 261,
+          "hotValue": 23467,
+          "heatScore": 2.3467502104608995,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "0987ac2e0ce6",
           "title": "肖战时差还没倒过来",
-          "rank": 222,
+          "rank": 262,
           "hotValue": 23335,
           "heatScore": 2.333564085126578,
           "category": "entertainment",
@@ -1573,7 +1852,7 @@
         {
           "id": "983830bc2164",
           "title": "奶奶把我的娃娃供奉在村里的庵里",
-          "rank": 223,
+          "rank": 263,
           "hotValue": 23248,
           "heatScore": 2.3248780933332127,
           "category": "entertainment",
@@ -1582,7 +1861,7 @@
         {
           "id": "1b49176e7d83",
           "title": "刘亦菲好像动画片里的公主",
-          "rank": 224,
+          "rank": 264,
           "hotValue": 23241,
           "heatScore": 2.3241073180773038,
           "category": "entertainment",
@@ -1591,7 +1870,7 @@
         {
           "id": "79cef0c46849",
           "title": "王星越说心动的offer是恋综",
-          "rank": 227,
+          "rank": 267,
           "hotValue": 20916,
           "heatScore": 2.091609289867521,
           "category": "entertainment",
@@ -1600,25 +1879,43 @@
         {
           "id": "c8a4f88e3e2a",
           "title": "CCTV报道樊振东波尔的友情",
-          "rank": 228,
+          "rank": 268,
           "hotValue": 20767,
           "heatScore": 2.0767297448120905,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "1ba00ffd4e00",
+          "title": "被男方指婚后拒绝同房女方发声",
+          "rank": 269,
+          "hotValue": 20698,
+          "heatScore": 2.0698298032766544,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "d1a86e3ce32f",
           "title": "用小番茄当冰块",
-          "rank": 229,
+          "rank": 270,
           "hotValue": 20523,
           "heatScore": 2.0523473886023,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "3fbd5c093430",
+          "title": "白宇前女友说终于有了很骄傲的感觉",
+          "rank": 272,
+          "hotValue": 18379,
+          "heatScore": 1.8379474250461876,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "dc1a582294fd",
           "title": "谷爱凌穿Prada的女王",
-          "rank": 231,
+          "rank": 273,
           "hotValue": 18096,
           "heatScore": 1.8096927142408405,
           "category": "entertainment",
@@ -1627,7 +1924,7 @@
         {
           "id": "09d8f325d9e2",
           "title": "星露谷物语",
-          "rank": 232,
+          "rank": 274,
           "hotValue": 17213,
           "heatScore": 1.721389790180215,
           "category": "entertainment",
@@ -1636,7 +1933,7 @@
         {
           "id": "d714b1b105c7",
           "title": "女子生5胞胎最小宝宝仅870克",
-          "rank": 233,
+          "rank": 275,
           "hotValue": 16520,
           "heatScore": 1.6520878542055668,
           "category": "entertainment",
@@ -1645,7 +1942,7 @@
         {
           "id": "87e91d3a9737",
           "title": "玫瑰丛生",
-          "rank": 234,
+          "rank": 276,
           "hotValue": 16392,
           "heatScore": 1.6392287367030927,
           "category": "entertainment",
@@ -1654,7 +1951,7 @@
         {
           "id": "d3809cc3c984",
           "title": "对冰箱的开发还是太少了",
-          "rank": 235,
+          "rank": 277,
           "hotValue": 16137,
           "heatScore": 1.6137745692112815,
           "category": "entertainment",
@@ -1663,7 +1960,7 @@
         {
           "id": "8f0ef9d771e3",
           "title": "白鹿宣传赵晴在你眉梢种红豆",
-          "rank": 236,
+          "rank": 278,
           "hotValue": 16032,
           "heatScore": 1.6032576415353235,
           "category": "entertainment",
@@ -1672,16 +1969,25 @@
         {
           "id": "e39ea722f571",
           "title": "王天辰 今天换我来",
-          "rank": 237,
+          "rank": 279,
           "hotValue": 16027,
           "heatScore": 1.6027044730562914,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "f0a3295259b1",
+          "title": "白鹿抢孩子咯",
+          "rank": 280,
+          "hotValue": 16008,
+          "heatScore": 1.6008880676762351,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "33e4b8da8f21",
           "title": "女孩拒绝蔚来销售推销遭辱骂",
-          "rank": 238,
+          "rank": 281,
           "hotValue": 15767,
           "heatScore": 1.5767954797771888,
           "category": "entertainment",
@@ -1690,7 +1996,7 @@
         {
           "id": "319ef617eb0a",
           "title": "鸭棚子一个即将消失的行当",
-          "rank": 239,
+          "rank": 282,
           "hotValue": 15616,
           "heatScore": 1.561639251365077,
           "category": "entertainment",
@@ -1699,7 +2005,7 @@
         {
           "id": "39b5f6ec23a4",
           "title": "JDG晋级LPL胜决",
-          "rank": 240,
+          "rank": 283,
           "hotValue": 14313,
           "heatScore": 1.4313711282050812,
           "category": "entertainment",
@@ -1708,25 +2014,16 @@
         {
           "id": "08cfe389b219",
           "title": "我和冰箱各有各的班要上",
-          "rank": 241,
+          "rank": 284,
           "hotValue": 13811,
           "heatScore": 1.3811429274642073,
           "category": "entertainment",
           "trend": "stable"
         },
         {
-          "id": "0ade2e7ac37f",
-          "title": "这么多年带出去玩的内衣都错付了",
-          "rank": 242,
-          "hotValue": 13726,
-          "heatScore": 1.372697116194863,
-          "category": "entertainment",
-          "trend": "stable"
-        },
-        {
           "id": "f4c15abe1d3b",
           "title": "惊蛰无声票房破10亿",
-          "rank": 243,
+          "rank": 285,
           "hotValue": 13663,
           "heatScore": 1.3663560779411819,
           "category": "entertainment",
@@ -1735,7 +2032,7 @@
         {
           "id": "65ab2071fdb3",
           "title": "年后上班就靠这一口续命",
-          "rank": 244,
+          "rank": 286,
           "hotValue": 11508,
           "heatScore": 1.1508239311343238,
           "category": "entertainment",
@@ -1744,7 +2041,7 @@
         {
           "id": "e35fdd980e1c",
           "title": "上班自己哄下班自己宠",
-          "rank": 245,
+          "rank": 287,
           "hotValue": 11465,
           "heatScore": 1.1465785696658033,
           "category": "entertainment",
@@ -1753,7 +2050,7 @@
         {
           "id": "0ff439842753",
           "title": "唐国强说刘萧旭演我儿子",
-          "rank": 246,
+          "rank": 288,
           "hotValue": 11404,
           "heatScore": 1.1404452339483502,
           "category": "entertainment",
@@ -1762,7 +2059,7 @@
         {
           "id": "47485e5a1947",
           "title": "湖人vs太阳",
-          "rank": 247,
+          "rank": 289,
           "hotValue": 11338,
           "heatScore": 1.1338615276138142,
           "category": "entertainment",
@@ -1771,7 +2068,7 @@
         {
           "id": "b09334517eee",
           "title": "KSG战胜DYG",
-          "rank": 248,
+          "rank": 290,
           "hotValue": 10425,
           "heatScore": 1.0425693763995771,
           "category": "entertainment",
@@ -1780,7 +2077,7 @@
         {
           "id": "ded2bf7aa391",
           "title": "Jennie神女吟唱",
-          "rank": 249,
+          "rank": 291,
           "hotValue": 9164,
           "heatScore": 0.9164172717833329,
           "category": "entertainment",
@@ -1789,16 +2086,25 @@
         {
           "id": "2348e6b481fb",
           "title": "金智秀MV镜头",
-          "rank": 251,
+          "rank": 293,
           "hotValue": 9130,
           "heatScore": 0.9130690354920562,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "6e8acd1147b9",
+          "title": "LGDNBW进入卡位赛",
+          "rank": 295,
+          "hotValue": 6803,
+          "heatScore": 0.6803224794114389,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "b834ab747b2b",
           "title": "多位领克车主测试语音关闭大灯",
-          "rank": 253,
+          "rank": 296,
           "hotValue": 6798,
           "heatScore": 0.6798825070329096,
           "category": "entertainment",
@@ -1807,7 +2113,7 @@
         {
           "id": "111f79f29463",
           "title": "男篮世预赛",
-          "rank": 254,
+          "rank": 297,
           "hotValue": 5802,
           "heatScore": 0.5802593588242567,
           "category": "entertainment",
@@ -1816,16 +2122,25 @@
         {
           "id": "f7534858087d",
           "title": "张真源哄了半天哄好了0个人",
-          "rank": 255,
+          "rank": 298,
           "hotValue": 4579,
           "heatScore": 0.4579002186185415,
           "category": "entertainment",
           "trend": "stable"
         },
         {
+          "id": "9955296f7d23",
+          "title": "租客退房后留下100万道具币",
+          "rank": 300,
+          "hotValue": 4526,
+          "heatScore": 0.452646441979103,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
           "id": "e9ca9d81dc35",
           "title": "努力在天赋面前磕了个响头",
-          "rank": 257,
+          "rank": 301,
           "hotValue": 4451,
           "heatScore": 0.4451553007969774,
           "category": "entertainment",
@@ -1834,7 +2149,7 @@
         {
           "id": "39f55a588877",
           "title": "Doinb说Uzi和TheShy能救LPL",
-          "rank": 258,
+          "rank": 302,
           "hotValue": 4400,
           "heatScore": 0.4400387448606598,
           "category": "entertainment",
@@ -1843,7 +2158,7 @@
         {
           "id": "d13938b4b19c",
           "title": "领克致歉语音误关大灯",
-          "rank": 259,
+          "rank": 303,
           "hotValue": 4237,
           "heatScore": 0.4237743348687962,
           "category": "entertainment",
@@ -1852,7 +2167,7 @@
         {
           "id": "df9e7694c60d",
           "title": "猫妈自留款",
-          "rank": 260,
+          "rank": 305,
           "hotValue": 2288,
           "heatScore": 0.22889751448422987,
           "category": "entertainment",
@@ -1861,7 +2176,7 @@
         {
           "id": "06f625a96d2a",
           "title": "蒯曼无缘新加坡大满贯八强",
-          "rank": 261,
+          "rank": 306,
           "hotValue": 2276,
           "heatScore": 0.22766460989978246,
           "category": "entertainment",
@@ -1870,7 +2185,7 @@
         {
           "id": "4a884240bba7",
           "title": "中国男篮更衣室庆祝",
-          "rank": 265,
+          "rank": 310,
           "hotValue": 0,
           "heatScore": 0.0,
           "category": "entertainment",
@@ -1879,7 +2194,16 @@
         {
           "id": "5cc85a74b3fe",
           "title": "比尔盖茨人设崩了",
-          "rank": 266,
+          "rank": 311,
+          "hotValue": 0,
+          "heatScore": 0.0,
+          "category": "entertainment",
+          "trend": "stable"
+        },
+        {
+          "id": "518f38f2e84c",
+          "title": "宁艺卓 最夸张的老钱来了",
+          "rank": 312,
           "hotValue": 0,
           "heatScore": 0.0,
           "category": "entertainment",
@@ -1888,7 +2212,7 @@
         {
           "id": "560947ebb639",
           "title": "陈垣宇vs雨果",
-          "rank": 267,
+          "rank": 313,
           "hotValue": -2273,
           "heatScore": -0.22732892821933623,
           "category": "entertainment",
@@ -1897,14 +2221,23 @@
         {
           "id": "002da01f1db2",
           "title": "谁还没看过谷爱凌这篇日记",
-          "rank": 268,
+          "rank": 314,
           "hotValue": -2273,
           "heatScore": -0.22739134776879408,
           "category": "entertainment",
           "trend": "stable"
+        },
+        {
+          "id": "a5bae2927a08",
+          "title": "落实中小学每天体育活动不低于2小时",
+          "rank": 315,
+          "hotValue": -2295,
+          "heatScore": -0.22955269628417652,
+          "category": "entertainment",
+          "trend": "stable"
         }
       ],
-      "totalHeat": 3092.030222741409
+      "totalHeat": 3545.7861774667163
     },
     "tech": {
       "id": "tech",
@@ -1915,7 +2248,7 @@
         {
           "id": "8d0c4dc98fe3",
           "title": "手机 涨价",
-          "rank": 2,
+          "rank": 3,
           "hotValue": 953776,
           "heatScore": 95.37767976218537,
           "category": "tech",
@@ -1933,7 +2266,7 @@
         {
           "id": "bdcfda5e35b5",
           "title": "一盒内存条堪比一套房",
-          "rank": 12,
+          "rank": 15,
           "hotValue": 660458,
           "heatScore": 66.04581206506424,
           "category": "tech",
@@ -1942,16 +2275,34 @@
         {
           "id": "c995e5fca1f2",
           "title": "芯片涨价原因",
-          "rank": 102,
+          "rank": 118,
           "hotValue": 128368,
           "heatScore": 12.836850906847147,
           "category": "tech",
           "trend": "stable"
         },
         {
+          "id": "369334c2ec2d",
+          "title": "捡手机藏4个月失主WiFi定位追到",
+          "rank": 170,
+          "hotValue": 74723,
+          "heatScore": 7.472352557168315,
+          "category": "tech",
+          "trend": "stable"
+        },
+        {
+          "id": "b91ab02ce09c",
+          "title": "AI短剧已经丝滑到这种程度了",
+          "rank": 181,
+          "hotValue": 68690,
+          "heatScore": 6.869050387727652,
+          "category": "tech",
+          "trend": "stable"
+        },
+        {
           "id": "0ab1551b5c4f",
           "title": "英伟达市值蒸发1.77万亿",
-          "rank": 157,
+          "rank": 185,
           "hotValue": 65468,
           "heatScore": 6.546837434632159,
           "category": "tech",
@@ -1960,25 +2311,16 @@
         {
           "id": "f1d8e8890010",
           "title": "智能手机全面涨价才刚开始",
-          "rank": 192,
+          "rank": 223,
           "hotValue": 39662,
           "heatScore": 3.9662581534577046,
           "category": "tech",
           "trend": "stable"
         },
         {
-          "id": "b91ab02ce09c",
-          "title": "AI短剧已经丝滑到这种程度了",
-          "rank": 209,
-          "hotValue": 27773,
-          "heatScore": 2.777304737553493,
-          "category": "tech",
-          "trend": "stable"
-        },
-        {
           "id": "39105ecbdab3",
           "title": "AI公司给文科生开300万年薪",
-          "rank": 226,
+          "rank": 266,
           "hotValue": 22386,
           "heatScore": 2.2386822707724385,
           "category": "tech",
@@ -1987,7 +2329,7 @@
         {
           "id": "e3ed90783248",
           "title": "英伟达大跌原因找到了",
-          "rank": 256,
+          "rank": 299,
           "hotValue": 4571,
           "heatScore": 0.4571336633414122,
           "category": "tech",
@@ -1996,14 +2338,14 @@
         {
           "id": "a6ab1b94a706",
           "title": "魅族宣布暂停手机业务",
-          "rank": 262,
+          "rank": 307,
           "hotValue": 2265,
           "heatScore": 0.2265258023885211,
           "category": "tech",
           "trend": "stable"
         }
       ],
-      "totalHeat": 265.8362110321645
+      "totalHeat": 277.400309239507
     },
     "lifestyle": {
       "id": "lifestyle",
@@ -2014,7 +2356,7 @@
         {
           "id": "8a0c6bfa6da6",
           "title": "春节消费市场人气旺活力足",
-          "rank": 14,
+          "rank": 17,
           "hotValue": 622644,
           "heatScore": 62.26445567538556,
           "category": "lifestyle",
@@ -2023,34 +2365,43 @@
         {
           "id": "833549f45343",
           "title": "12306已累计预售春运火车票3.76亿张",
-          "rank": 20,
+          "rank": 21,
           "hotValue": 525141,
           "heatScore": 52.51411898962213,
           "category": "lifestyle",
           "trend": "stable"
         },
         {
+          "id": "284562596ba1",
+          "title": "白宇和前女友分手原因",
+          "rank": 56,
+          "hotValue": 265631,
+          "heatScore": 26.56318226059624,
+          "category": "lifestyle",
+          "trend": "stable"
+        },
+        {
           "id": "f1968a53ff4b",
           "title": "女子婚后拒同房法院判定不予离婚",
-          "rank": 54,
+          "rank": 57,
           "hotValue": 265260,
           "heatScore": 26.526013954643492,
           "category": "lifestyle",
           "trend": "stable"
         },
         {
-          "id": "284562596ba1",
-          "title": "白宇和前女友分手原因",
-          "rank": 57,
-          "hotValue": 253221,
-          "heatScore": 25.322132396196825,
+          "id": "754baefbed99",
+          "title": "Tiffany卞耀汉结婚",
+          "rank": 74,
+          "hotValue": 223116,
+          "heatScore": 22.31166001665144,
           "category": "lifestyle",
           "trend": "stable"
         },
         {
           "id": "f3e94a75299b",
           "title": "育儿嫂疑在房间打孩子被玻璃照出",
-          "rank": 70,
+          "rank": 79,
           "hotValue": 213948,
           "heatScore": 21.39483845310354,
           "category": "lifestyle",
@@ -2059,7 +2410,7 @@
         {
           "id": "ede1e7906d06",
           "title": "王嘉尔抽到了热巴的礼物",
-          "rank": 72,
+          "rank": 82,
           "hotValue": 207318,
           "heatScore": 20.731879998947967,
           "category": "lifestyle",
@@ -2068,25 +2419,25 @@
         {
           "id": "965c4380c83b",
           "title": "陈飞宇半夜健身偶遇陈哲远",
-          "rank": 96,
+          "rank": 110,
           "hotValue": 146895,
           "heatScore": 14.689551209720218,
           "category": "lifestyle",
           "trend": "stable"
         },
         {
-          "id": "754baefbed99",
-          "title": "Tiffany卞耀汉结婚",
-          "rank": 101,
-          "hotValue": 129050,
-          "heatScore": 12.90503696956182,
+          "id": "e3c829bac3a2",
+          "title": "数读春节消费市场年味十足",
+          "rank": 112,
+          "hotValue": 145674,
+          "heatScore": 14.567426704635434,
           "category": "lifestyle",
           "trend": "stable"
         },
         {
           "id": "29061dc374f6",
           "title": "各地买房公积金最多能贷多少",
-          "rank": 128,
+          "rank": 148,
           "hotValue": 86075,
           "heatScore": 8.607545898918694,
           "category": "lifestyle",
@@ -2095,7 +2446,7 @@
         {
           "id": "acccb8810f93",
           "title": "勾中指竟然是个养生动作",
-          "rank": 136,
+          "rank": 157,
           "hotValue": 79983,
           "heatScore": 7.998385624237579,
           "category": "lifestyle",
@@ -2104,7 +2455,7 @@
         {
           "id": "3ccf454dcd2f",
           "title": "让李泽锋演上恋爱脑阴湿男了",
-          "rank": 230,
+          "rank": 271,
           "hotValue": 18503,
           "heatScore": 1.850325646260262,
           "category": "lifestyle",
@@ -2113,14 +2464,14 @@
         {
           "id": "563491e05316",
           "title": "上海一宠物健身房月卡近2000元",
-          "rank": 263,
+          "rank": 308,
           "hotValue": 2244,
           "heatScore": 0.22447022974733447,
           "category": "lifestyle",
           "trend": "stable"
         }
       ],
-      "totalHeat": 255.02875504634545
+      "totalHeat": 280.2438546624699
     },
     "government": {
       "id": "government",
@@ -2131,7 +2482,7 @@
         {
           "id": "82e609d15d3f",
           "title": "尘白禁区发文回应",
-          "rank": 13,
+          "rank": 16,
           "hotValue": 631569,
           "heatScore": 63.15690931966894,
           "category": "government",
@@ -2149,7 +2500,7 @@
         {
           "id": "fa3fc7b9cffb",
           "title": "中方回应金正恩对韩表态",
-          "rank": 56,
+          "rank": 60,
           "hotValue": 257595,
           "heatScore": 25.759516481127587,
           "category": "government",
@@ -2158,16 +2509,25 @@
         {
           "id": "fc5ac9d4fe9c",
           "title": "官方通报老人因无人抬担架延误离世",
-          "rank": 73,
+          "rank": 83,
           "hotValue": 206964,
           "heatScore": 20.696456692224494,
           "category": "government",
           "trend": "stable"
         },
         {
+          "id": "d90f964cc6cf",
+          "title": "米哈游内部发文回应员工意外离世",
+          "rank": 99,
+          "hotValue": 163788,
+          "heatScore": 16.37888199990574,
+          "category": "government",
+          "trend": "stable"
+        },
+        {
           "id": "b14aa94229e3",
           "title": "巴基斯坦对阿富汗政府公开宣战",
-          "rank": 110,
+          "rank": 127,
           "hotValue": 118688,
           "heatScore": 11.868893896474312,
           "category": "government",
@@ -2176,7 +2536,7 @@
         {
           "id": "308431ffb5b3",
           "title": "谷爱凌回应九亿少女的梦",
-          "rank": 133,
+          "rank": 154,
           "hotValue": 81619,
           "heatScore": 8.161993509353415,
           "category": "government",
@@ -2185,7 +2545,7 @@
         {
           "id": "536a44bd97c6",
           "title": "官方回应西湖停车30元一小时被吐槽",
-          "rank": 152,
+          "rank": 179,
           "hotValue": 69648,
           "heatScore": 6.964854003454054,
           "category": "government",
@@ -2194,16 +2554,25 @@
         {
           "id": "5ccb527ba172",
           "title": "高叶宋妍霏回应臭脸",
-          "rank": 191,
+          "rank": 222,
           "hotValue": 40125,
           "heatScore": 4.0125585527662855,
           "category": "government",
           "trend": "stable"
         },
         {
+          "id": "35ef581bb82a",
+          "title": "人社局回应女子为父请假致其被辞退",
+          "rank": 230,
+          "hotValue": 35521,
+          "heatScore": 3.5521603429705033,
+          "category": "government",
+          "trend": "stable"
+        },
+        {
           "id": "f73c5da24e72",
           "title": "男子回应过年杀鸭杀出超6克黄金",
-          "rank": 206,
+          "rank": 241,
           "hotValue": 31916,
           "heatScore": 3.191694216512156,
           "category": "government",
@@ -2212,7 +2581,7 @@
         {
           "id": "8ed9afcfa21f",
           "title": "多方回应男子购房6年办不了房产证",
-          "rank": 250,
+          "rank": 292,
           "hotValue": 9162,
           "heatScore": 0.9162629216201725,
           "category": "government",
@@ -2221,23 +2590,32 @@
         {
           "id": "99094c3ae29f",
           "title": "全红婵回应和刘清漪跳舞",
-          "rank": 252,
+          "rank": 294,
           "hotValue": 6869,
           "heatScore": 0.6869188275361617,
           "category": "government",
           "trend": "stable"
         },
         {
+          "id": "542bc066ef2b",
+          "title": "全红婵秀街舞回应被网友攻击",
+          "rank": 304,
+          "hotValue": 2312,
+          "heatScore": 0.23123060091290845,
+          "category": "government",
+          "trend": "stable"
+        },
+        {
           "id": "26bdf1397ddb",
           "title": "网红书记走红更要长红",
-          "rank": 264,
+          "rank": 309,
           "hotValue": 2198,
           "heatScore": 0.21987468776129102,
           "category": "government",
           "trend": "stable"
         }
       ],
-      "totalHeat": 185.33161680065183
+      "totalHeat": 205.49388974444096
     },
     "sports": {
       "id": "sports",
@@ -2248,7 +2626,7 @@
         {
           "id": "81d849f1989b",
           "title": "冬奥花滑冠军刘美贤遭俄罗斯粉丝吐槽",
-          "rank": 16,
+          "rank": 18,
           "hotValue": 564782,
           "heatScore": 56.478243475557385,
           "category": "sports",
@@ -2257,7 +2635,7 @@
         {
           "id": "c1c3f6b764f4",
           "title": "TheShy打乒乓球去了",
-          "rank": 168,
+          "rank": 197,
           "hotValue": 56545,
           "heatScore": 5.654534801672929,
           "category": "sports",
@@ -2275,7 +2653,7 @@
         {
           "id": "dcdfbf82acdc",
           "title": "比尔盖茨出轨女性身份曝光",
-          "rank": 7,
+          "rank": 8,
           "hotValue": 718234,
           "heatScore": 71.82344828954183,
           "category": "social",
@@ -2284,68 +2662,86 @@
         {
           "id": "d0df77e4ad49",
           "title": "香港山火仍在扑救中",
-          "rank": 39,
+          "rank": 40,
           "hotValue": 345568,
           "heatScore": 34.556851627599684,
           "category": "social",
           "trend": "stable"
         },
         {
+          "id": "2e6d82fd4065",
+          "title": "未开封杨枝甘露8天后爆炸",
+          "rank": 58,
+          "hotValue": 260168,
+          "heatScore": 26.016818733863428,
+          "category": "social",
+          "trend": "stable"
+        },
+        {
           "id": "21a063719a8b",
           "title": "香港山火火情基本受控",
-          "rank": 58,
+          "rank": 62,
           "hotValue": 252025,
           "heatScore": 25.202552268628708,
           "category": "social",
           "trend": "stable"
         },
         {
+          "id": "5d1e702d7efd",
+          "title": "女子婚内出轨同居犯重婚罪获刑",
+          "rank": 91,
+          "hotValue": 189219,
+          "heatScore": 18.921965249494974,
+          "category": "social",
+          "trend": "stable"
+        },
+        {
           "id": "43acc8486539",
           "title": "重庆有顾客就餐时卡式炉爆炸",
-          "rank": 113,
+          "rank": 133,
           "hotValue": 108354,
           "heatScore": 10.835438598480456,
           "category": "social",
           "trend": "stable"
         },
         {
-          "id": "2e6d82fd4065",
-          "title": "未开封杨枝甘露8天后爆炸",
-          "rank": 131,
-          "hotValue": 82886,
-          "heatScore": 8.28861719010944,
+          "id": "c16de7847097",
+          "title": "女孩遭猥亵爷爷维权被要求别声张",
+          "rank": 135,
+          "hotValue": 107004,
+          "heatScore": 10.70045995085853,
+          "category": "social",
+          "trend": "stable"
+        },
+        {
+          "id": "aba46bbefc4b",
+          "title": "医院贴条提醒禁用死亡人员证件挂号",
+          "rank": 176,
+          "hotValue": 72084,
+          "heatScore": 7.208465162282783,
           "category": "social",
           "trend": "stable"
         },
         {
           "id": "f864f33d27eb",
           "title": "比尔盖茨曾出轨桥牌美女和科学家",
-          "rank": 200,
+          "rank": 233,
           "hotValue": 35034,
           "heatScore": 3.5034520796638637,
           "category": "social",
           "trend": "stable"
         },
         {
-          "id": "5d1e702d7efd",
-          "title": "女子婚内出轨同居犯重婚罪获刑",
-          "rank": 217,
-          "hotValue": 25454,
-          "heatScore": 2.5454538048236612,
-          "category": "social",
-          "trend": "stable"
-        },
-        {
           "id": "6d5372262448",
           "title": "虎跳峡落水失联男子仍未找到",
-          "rank": 225,
+          "rank": 265,
           "hotValue": 23140,
           "heatScore": 2.3140338140479697,
           "category": "social",
           "trend": "stable"
         }
       ],
-      "totalHeat": 159.06984767289563
+      "totalHeat": 211.08348577446225
     },
     "business": {
       "id": "business",
@@ -2356,7 +2752,7 @@
         {
           "id": "843f7972c0a4",
           "title": "日本物价居然到这种程度了",
-          "rank": 9,
+          "rank": 11,
           "hotValue": 694436,
           "heatScore": 69.44367548556421,
           "category": "business",
@@ -2374,7 +2770,7 @@
         {
           "id": "74dafee17010",
           "title": "丈夫准备给诞下5胞胎老婆送黄金",
-          "rank": 38,
+          "rank": 39,
           "hotValue": 352808,
           "heatScore": 35.28080559308684,
           "category": "business",
@@ -2383,7 +2779,7 @@
         {
           "id": "5e84a415ef21",
           "title": "台独刘世芳亲属在大陆投资谋利",
-          "rank": 47,
+          "rank": 49,
           "hotValue": 300539,
           "heatScore": 30.05396847683464,
           "category": "business",
@@ -2392,16 +2788,16 @@
         {
           "id": "2407d351dcdd",
           "title": "意大利小偷把肾结石误认黄金偷走",
-          "rank": 85,
-          "hotValue": 169442,
-          "heatScore": 16.944228693223316,
+          "rank": 75,
+          "hotValue": 221198,
+          "heatScore": 22.11984807792011,
           "category": "business",
           "trend": "stable"
         },
         {
           "id": "6d04506c539c",
           "title": "爱奇艺利润暴跌七成",
-          "rank": 99,
+          "rank": 116,
           "hotValue": 135491,
           "heatScore": 13.549151997892192,
           "category": "business",
@@ -2410,7 +2806,7 @@
         {
           "id": "54fd56788c97",
           "title": "洗涤公司被反映月薪3000元工作19小时",
-          "rank": 144,
+          "rank": 166,
           "hotValue": 75460,
           "heatScore": 7.546002377462234,
           "category": "business",
@@ -2419,7 +2815,7 @@
         {
           "id": "4f46fa358ff7",
           "title": "金价波动",
-          "rank": 187,
+          "rank": 218,
           "hotValue": 43181,
           "heatScore": 4.318171520218317,
           "category": "business",
@@ -2428,14 +2824,14 @@
         {
           "id": "47b3cd7c3e73",
           "title": "央行保持人民币汇率基本稳定",
-          "rank": 214,
+          "rank": 252,
           "hotValue": 27193,
           "heatScore": 2.7193935759028722,
           "category": "business",
           "trend": "stable"
         }
       ],
-      "totalHeat": 219.32424286586988
+      "totalHeat": 224.49986225056665
     },
     "platform": {
       "id": "platform",
@@ -2446,7 +2842,7 @@
         {
           "id": "7f80f8a78886",
           "title": "田柾国直播爆粗口",
-          "rank": 25,
+          "rank": 26,
           "hotValue": 429673,
           "heatScore": 42.96734502054439,
           "category": "platform",
@@ -2455,23 +2851,41 @@
         {
           "id": "0561423f3be1",
           "title": "刘晓艳现身小徐直播间",
-          "rank": 109,
+          "rank": 126,
           "hotValue": 120882,
           "heatScore": 12.08824574171036,
           "category": "platform",
           "trend": "stable"
         },
         {
+          "id": "9ec3326b2d07",
+          "title": "肖战tods直播镜头",
+          "rank": 129,
+          "hotValue": 116349,
+          "heatScore": 11.634985580280613,
+          "category": "platform",
+          "trend": "stable"
+        },
+        {
           "id": "24687cdf32c0",
           "title": "Prada直播",
-          "rank": 140,
+          "rank": 162,
           "hotValue": 77867,
           "heatScore": 7.786722140423253,
           "category": "platform",
           "trend": "stable"
+        },
+        {
+          "id": "70f2ef0f6042",
+          "title": "朱志鑫直播",
+          "rank": 195,
+          "hotValue": 58410,
+          "heatScore": 5.841019672138634,
+          "category": "platform",
+          "trend": "stable"
         }
       ],
-      "totalHeat": 62.842312902678
+      "totalHeat": 80.31831815509724
     },
     "knowledge": {
       "id": "knowledge",
@@ -2482,7 +2896,7 @@
         {
           "id": "1761f9547076",
           "title": "老外以为一个姓张的人研究遍及各学科",
-          "rank": 21,
+          "rank": 22,
           "hotValue": 492099,
           "heatScore": 49.209998455608705,
           "category": "knowledge",
@@ -2491,7 +2905,7 @@
         {
           "id": "a8233e18877d",
           "title": "巴基斯坦航天员将入驻中国空间站",
-          "rank": 107,
+          "rank": 123,
           "hotValue": 123150,
           "heatScore": 12.315035182566142,
           "category": "knowledge",
@@ -2500,7 +2914,7 @@
         {
           "id": "f374f05f6574",
           "title": "女子付8800寻宠发现猫没丢被拒退款",
-          "rank": 147,
+          "rank": 171,
           "hotValue": 74587,
           "heatScore": 7.458781865772222,
           "category": "knowledge",
@@ -2509,7 +2923,7 @@
         {
           "id": "28c02669c1cf",
           "title": "女子花8800寻猫发现没丢想退款遭拒",
-          "rank": 173,
+          "rank": 203,
           "hotValue": 51351,
           "heatScore": 5.135187074068005,
           "category": "knowledge",
@@ -2517,13 +2931,40 @@
         }
       ],
       "totalHeat": 74.11900257801507
+    },
+    "anime": {
+      "id": "anime",
+      "name": "游戏动漫",
+      "emoji": "🎮",
+      "color": "#f97316",
+      "events": [
+        {
+          "id": "8fef9ed95db3",
+          "title": "中国邮政与成人向游戏联名错在哪",
+          "rank": 257,
+          "hotValue": 25305,
+          "heatScore": 2.5305913468787042,
+          "category": "anime",
+          "trend": "stable"
+        }
+      ],
+      "totalHeat": 2.5305913468787042
     }
   },
   "topEvents": [
     {
+      "id": "77fcc224dd5c",
+      "title": "逐玉",
+      "rank": 1,
+      "hotValue": 1128440,
+      "heatScore": 112.8440340422333,
+      "category": "entertainment",
+      "trend": "stable"
+    },
+    {
       "id": "aab5bc3dda53",
       "title": "24岁女生成功诞下1男4女5胞胎",
-      "rank": 1,
+      "rank": 2,
       "hotValue": 1051189,
       "heatScore": 105.11896138809193,
       "category": "entertainment",
@@ -2532,7 +2973,7 @@
     {
       "id": "8d0c4dc98fe3",
       "title": "手机 涨价",
-      "rank": 2,
+      "rank": 3,
       "hotValue": 953776,
       "heatScore": 95.37767976218537,
       "category": "tech",
@@ -2541,7 +2982,7 @@
     {
       "id": "33fbfcb5a4ca",
       "title": "男子谎称走亲戚欲把7岁儿子留老家",
-      "rank": 3,
+      "rank": 4,
       "hotValue": 941015,
       "heatScore": 94.10152793288185,
       "category": "entertainment",
@@ -2550,18 +2991,9 @@
     {
       "id": "c6f1c5ef7fca",
       "title": "美国发动网攻侵占全球虚拟资产",
-      "rank": 4,
+      "rank": 5,
       "hotValue": 919609,
       "heatScore": 91.96097359445882,
-      "category": "entertainment",
-      "trend": "stable"
-    },
-    {
-      "id": "77fcc224dd5c",
-      "title": "逐玉",
-      "rank": 5,
-      "hotValue": 875904,
-      "heatScore": 87.59045928504104,
       "category": "entertainment",
       "trend": "stable"
     },
@@ -2575,9 +3007,18 @@
       "trend": "stable"
     },
     {
+      "id": "65baba53a43e",
+      "title": "六级",
+      "rank": 7,
+      "hotValue": 727703,
+      "heatScore": 72.77035595031502,
+      "category": "entertainment",
+      "trend": "stable"
+    },
+    {
       "id": "dcdfbf82acdc",
       "title": "比尔盖茨出轨女性身份曝光",
-      "rank": 7,
+      "rank": 8,
       "hotValue": 718234,
       "heatScore": 71.82344828954183,
       "category": "social",
@@ -2586,16 +3027,25 @@
     {
       "id": "7f55d1f61ca1",
       "title": "四六级查分",
-      "rank": 8,
+      "rank": 9,
       "hotValue": 713218,
       "heatScore": 71.32180991692925,
       "category": "entertainment",
       "trend": "stable"
     },
     {
+      "id": "4dd9bfd96d16",
+      "title": "现在就出发4",
+      "rank": 10,
+      "hotValue": 699318,
+      "heatScore": 69.93189443302921,
+      "category": "entertainment",
+      "trend": "stable"
+    },
+    {
       "id": "843f7972c0a4",
       "title": "日本物价居然到这种程度了",
-      "rank": 9,
+      "rank": 11,
       "hotValue": 694436,
       "heatScore": 69.44367548556421,
       "category": "business",
@@ -2604,7 +3054,7 @@
     {
       "id": "f66696d78922",
       "title": "飞驰人生3",
-      "rank": 10,
+      "rank": 12,
       "hotValue": 694234,
       "heatScore": 69.42340984630451,
       "category": "entertainment",
@@ -2613,16 +3063,25 @@
     {
       "id": "d2be2f79e3db",
       "title": "杨幂TOP坐一起",
-      "rank": 11,
+      "rank": 13,
       "hotValue": 682309,
       "heatScore": 68.2309975221695,
       "category": "entertainment",
       "trend": "stable"
     },
     {
+      "id": "096c5cb39667",
+      "title": "不建议在朋友圈展示技能",
+      "rank": 14,
+      "hotValue": 679968,
+      "heatScore": 67.99686604171598,
+      "category": "entertainment",
+      "trend": "stable"
+    },
+    {
       "id": "bdcfda5e35b5",
       "title": "一盒内存条堪比一套房",
-      "rank": 12,
+      "rank": 15,
       "hotValue": 660458,
       "heatScore": 66.04581206506424,
       "category": "tech",
@@ -2631,7 +3090,7 @@
     {
       "id": "82e609d15d3f",
       "title": "尘白禁区发文回应",
-      "rank": 13,
+      "rank": 16,
       "hotValue": 631569,
       "heatScore": 63.15690931966894,
       "category": "government",
@@ -2640,25 +3099,16 @@
     {
       "id": "8a0c6bfa6da6",
       "title": "春节消费市场人气旺活力足",
-      "rank": 14,
+      "rank": 17,
       "hotValue": 622644,
       "heatScore": 62.26445567538556,
       "category": "lifestyle",
       "trend": "stable"
     },
     {
-      "id": "65baba53a43e",
-      "title": "六级",
-      "rank": 15,
-      "hotValue": 610439,
-      "heatScore": 61.043989092863285,
-      "category": "entertainment",
-      "trend": "stable"
-    },
-    {
       "id": "81d849f1989b",
       "title": "冬奥花滑冠军刘美贤遭俄罗斯粉丝吐槽",
-      "rank": 16,
+      "rank": 18,
       "hotValue": 564782,
       "heatScore": 56.478243475557385,
       "category": "sports",
@@ -2667,25 +3117,16 @@
     {
       "id": "4313a604f506",
       "title": "父亲退还18.8万彩礼新娘发声",
-      "rank": 17,
+      "rank": 19,
       "hotValue": 546634,
       "heatScore": 54.66341443233861,
       "category": "entertainment",
       "trend": "stable"
     },
     {
-      "id": "096c5cb39667",
-      "title": "不建议在朋友圈展示技能",
-      "rank": 18,
-      "hotValue": 546558,
-      "heatScore": 54.655841595997835,
-      "category": "entertainment",
-      "trend": "stable"
-    },
-    {
       "id": "ff5316b95acd",
       "title": "南京档案馆找到谷爱凌外婆户籍卡",
-      "rank": 19,
+      "rank": 20,
       "hotValue": 538441,
       "heatScore": 53.844136639777226,
       "category": "entertainment",
@@ -2694,7 +3135,7 @@
     {
       "id": "833549f45343",
       "title": "12306已累计预售春运火车票3.76亿张",
-      "rank": 20,
+      "rank": 21,
       "hotValue": 525141,
       "heatScore": 52.51411898962213,
       "category": "lifestyle",
@@ -2703,7 +3144,7 @@
     {
       "id": "1761f9547076",
       "title": "老外以为一个姓张的人研究遍及各学科",
-      "rank": 21,
+      "rank": 22,
       "hotValue": 492099,
       "heatScore": 49.209998455608705,
       "category": "knowledge",
@@ -2712,18 +3153,9 @@
     {
       "id": "76d7afaa98c5",
       "title": "迪丽热巴 瓦猫",
-      "rank": 22,
+      "rank": 23,
       "hotValue": 447026,
       "heatScore": 44.702663310865816,
-      "category": "entertainment",
-      "trend": "stable"
-    },
-    {
-      "id": "4dd9bfd96d16",
-      "title": "现在就出发4",
-      "rank": 23,
-      "hotValue": 446223,
-      "heatScore": 44.62230743991294,
       "category": "entertainment",
       "trend": "stable"
     },
@@ -2737,9 +3169,18 @@
       "trend": "stable"
     },
     {
+      "id": "e45a4665a970",
+      "title": "尘白禁区联动取消",
+      "rank": 25,
+      "hotValue": 432892,
+      "heatScore": 43.28924587691685,
+      "category": "entertainment",
+      "trend": "stable"
+    },
+    {
       "id": "7f80f8a78886",
       "title": "田柾国直播爆粗口",
-      "rank": 25,
+      "rank": 26,
       "hotValue": 429673,
       "heatScore": 42.96734502054439,
       "category": "platform",
@@ -2748,7 +3189,7 @@
     {
       "id": "d0f433e8aa5b",
       "title": "BLACKPINK 回归",
-      "rank": 26,
+      "rank": 27,
       "hotValue": 415426,
       "heatScore": 41.542648349682885,
       "category": "entertainment",
@@ -2757,18 +3198,9 @@
     {
       "id": "de6361a4b5dc",
       "title": "肖战Gucci看秀待遇",
-      "rank": 27,
+      "rank": 28,
       "hotValue": 413351,
       "heatScore": 41.33514970144272,
-      "category": "entertainment",
-      "trend": "stable"
-    },
-    {
-      "id": "e45a4665a970",
-      "title": "尘白禁区联动取消",
-      "rank": 28,
-      "hotValue": 408331,
-      "heatScore": 40.83319262866382,
       "category": "entertainment",
       "trend": "stable"
     },
@@ -2836,9 +3268,18 @@
       "trend": "stable"
     },
     {
+      "id": "cf04f99e48ed",
+      "title": "替父请假2小时致其被开除女子发声",
+      "rank": 36,
+      "hotValue": 360979,
+      "heatScore": 36.09797810302392,
+      "category": "entertainment",
+      "trend": "stable"
+    },
+    {
       "id": "d121eb88ae53",
       "title": "山西卫健委已严肃约谈市急救中心",
-      "rank": 36,
+      "rank": 37,
       "hotValue": 360179,
       "heatScore": 36.01791968188112,
       "category": "entertainment",
@@ -2847,7 +3288,7 @@
     {
       "id": "a35a23e2c331",
       "title": "网传浪姐7参赛名单",
-      "rank": 37,
+      "rank": 38,
       "hotValue": 356286,
       "heatScore": 35.62862438360258,
       "category": "entertainment",
@@ -2856,7 +3297,7 @@
     {
       "id": "74dafee17010",
       "title": "丈夫准备给诞下5胞胎老婆送黄金",
-      "rank": 38,
+      "rank": 39,
       "hotValue": 352808,
       "heatScore": 35.28080559308684,
       "category": "business",
@@ -2865,7 +3306,7 @@
     {
       "id": "d0df77e4ad49",
       "title": "香港山火仍在扑救中",
-      "rank": 39,
+      "rank": 40,
       "hotValue": 345568,
       "heatScore": 34.556851627599684,
       "category": "social",
@@ -2874,7 +3315,7 @@
     {
       "id": "c557e6549825",
       "title": "虞书欣红衣主母跳惊鸿一面",
-      "rank": 40,
+      "rank": 41,
       "hotValue": 339594,
       "heatScore": 33.9594882468552,
       "category": "entertainment",
@@ -2883,25 +3324,34 @@
     {
       "id": "af75e18df74e",
       "title": "刘诗诗头戴非遗绒花高雅动人",
-      "rank": 41,
+      "rank": 42,
       "hotValue": 338362,
       "heatScore": 33.836287875190415,
       "category": "entertainment",
       "trend": "stable"
     },
     {
-      "id": "cf04f99e48ed",
-      "title": "替父请假2小时致其被开除女子发声",
-      "rank": 42,
-      "hotValue": 325327,
-      "heatScore": 32.53271213248484,
+      "id": "ceb85206f852",
+      "title": "43岁也能考编了",
+      "rank": 43,
+      "hotValue": 323301,
+      "heatScore": 32.33017119903256,
+      "category": "entertainment",
+      "trend": "stable"
+    },
+    {
+      "id": "d593151bcda7",
+      "title": "姜妍常驻现在就出发",
+      "rank": 44,
+      "hotValue": 315485,
+      "heatScore": 31.548539119923063,
       "category": "entertainment",
       "trend": "stable"
     },
     {
       "id": "7767438a94e3",
       "title": "搞对象后弟弟的变化",
-      "rank": 43,
+      "rank": 45,
       "hotValue": 312873,
       "heatScore": 31.287324227888607,
       "category": "entertainment",
@@ -2910,7 +3360,7 @@
     {
       "id": "0b1df71940eb",
       "title": "周冬雨自曝和余文乐录恋综很走心",
-      "rank": 44,
+      "rank": 46,
       "hotValue": 306967,
       "heatScore": 30.696719347769523,
       "category": "entertainment",
@@ -2919,7 +3369,7 @@
     {
       "id": "f1a996a00539",
       "title": "11月宝宝从婴儿车滑落颅脑重伤",
-      "rank": 45,
+      "rank": 47,
       "hotValue": 305357,
       "heatScore": 30.535784181855064,
       "category": "entertainment",
@@ -2928,7 +3378,7 @@
     {
       "id": "f7cec04e06c3",
       "title": "FIBA社媒称中国男篮偷走胜利",
-      "rank": 46,
+      "rank": 48,
       "hotValue": 300614,
       "heatScore": 30.061455535847777,
       "category": "entertainment",
@@ -2937,7 +3387,7 @@
     {
       "id": "5e84a415ef21",
       "title": "台独刘世芳亲属在大陆投资谋利",
-      "rank": 47,
+      "rank": 49,
       "hotValue": 300539,
       "heatScore": 30.05396847683464,
       "category": "business",
@@ -2946,27 +3396,9 @@
     {
       "id": "49ba030c9043",
       "title": "全网最黑大熊猫出现了",
-      "rank": 48,
+      "rank": 50,
       "hotValue": 295542,
       "heatScore": 29.55429332833174,
-      "category": "entertainment",
-      "trend": "stable"
-    },
-    {
-      "id": "6cefc92d5a8f",
-      "title": "全国妈妈的统一夜晚",
-      "rank": 49,
-      "hotValue": 293430,
-      "heatScore": 29.343000074552137,
-      "category": "entertainment",
-      "trend": "stable"
-    },
-    {
-      "id": "446f91457820",
-      "title": "纯真年代的爱情",
-      "rank": 50,
-      "hotValue": 292311,
-      "heatScore": 29.231130489170702,
       "category": "entertainment",
       "trend": "stable"
     }
